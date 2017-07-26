@@ -12,12 +12,12 @@
         ?>
         </div>
       <?php
-      $colorcounter = 0;
+     $bgcolor = $_GET['bg'];
       if ( have_posts() ) : 
         while ( have_posts() ) : the_post(); ?>
      <div <?php post_class(); ?>>
         <article>
-        <div class="block-item block-item-single">
+        <div class="block-item block-item-single <?php if($bgcolor == 1) { echo 'even-color'; } else { echo 'uneven-color'; } ?>">
             <div class="text-side text-side-single col-sm-12 col-md-12 col-lg-12">
                       <h1 title="<?php the_title_attribute(); ?>" class="main-title"><?php the_title(); ?></h1>
                 <p><?php the_content(); ?></p>
@@ -64,21 +64,15 @@
        </article><!-- close article -->
       <?php if( comments_open() ) { ?>
 	          <h3 class="h3-join-the-conversation"><?php _e('Join the conversation', 'canitia'); ?></h3>
-        <?php }
-        ?>
        <!-- let user enter a comment -->
       <?php comments_template(); ?>
+        <?php } ?>
+
   
             </div><!-- close block item -->
          </article>
          </div><!-- close post class-->   
           </div><!-- close blocktainer -->
-          <?php $colorcounter++; 
-          if ($colorcounter == 3) {
-            $colorcounter = 1;
-          }
-
-?>
           <?php endwhile; else: ?>
           <div class="post-content">
               <p><?php _e('Sorry, it seems there are no posts available.', 'chaukor'); ?></p>
