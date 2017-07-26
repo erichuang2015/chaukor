@@ -20,7 +20,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 *****************************************/
 body {
-  min-height: 100vh;
+
   font-family: 'Open Sans', sans-serif;
   background-color: black;
 }
@@ -244,7 +244,7 @@ strong {
 	display: flex;
 	flex-direction: row;
 	height: auto;
-    min-height: 100vh;
+
 }
 
 .even-color {
@@ -252,7 +252,7 @@ strong {
 }
 
 .uneven-color {
-	background-color: #f7b733;
+	background-color: #f1c40f;
 }
 
 .text-side {
@@ -272,6 +272,10 @@ strong {
 	font-size: 15px;
     font-style: italic;
     color: #5b5a5e;
+}
+
+.text-side-single {
+	justify-content: initial !important; /* align horizontal */
 }
 
 .image-side {
@@ -326,16 +330,6 @@ a {
   CONTENT SIDEBAR / MAIN
 
 *****************************************/
-
-/* headers like 'latest' */
-.text-left-title-featured-sidebar {
-	font-size: 125% !important;
-	font-weight: 300;
-    margin-top: 10px;
-	border-bottom: 1px solid #f8f8f8;
-	color: #979797;
-	text-transform: uppercase;
-}
 
 .badge {
     right: 10px;
@@ -504,18 +498,18 @@ ul.pings.commentlist {
 }
 
 .pagination-within li { 
-	background-color: #d3d3d3;
-	color:black;
+    background-color: #fc4a1a;
+	color:white;
 }
 
 .pagination-within > a > li {
-	background-color: #ebebeb;
-	color: black;
+    background-color: #fc4a1a;
+	color:white;
 }
 
 .pagination-within > a > li:hover {
-	background-color: #d3d3d3;
-	color: black;
+	background-color: #4abdac;
+	color: white;
 }
 
 /* pagination within a post/page */
@@ -613,7 +607,8 @@ img.avatar {
 
 *****************************************/
 .pagination {
-		background-color: #fc4a1a;
+    background-color: #fc4a1a;
+    padding-top: 20px;
 }
 
 .pagination > .mx-auto {
@@ -626,18 +621,23 @@ img.avatar {
 }
 
 .pagination > ul > li {
-	background-color: #ebebeb;
+	background-color: #b23615;
 	float: left;
 	list-style: none;
 	padding: 15px;
 }
 
+.pagination > ul > li > a, 
+.pagination > ul > li > a:hover {
+	color: white;
+}
+
 .pagination > ul > li:hover {
-	background-color: #d3d3d3;
+	background-color: #4abdac;
 }
 
 .pagination > ul > li.active {
-	background-color: #d3d3d3 !important;
+	background-color: #4abdac;
 }
 
 .pagination > ul > li.pagination-dash {
@@ -682,11 +682,11 @@ footer > .container > .text-center {
 @media (max-width: 575px) {  
 
 	.block-item {
-		padding: 30px;
+		padding: 5px;
 	}
 
 	.text-side {
-		padding-right: 30px;
+		padding-right: 5px;
 	}
 
 	.carousel-item {
@@ -787,11 +787,11 @@ footer > .container > .text-center {
 @media (min-width: 576px) and (max-width: 767px) { 
 
 	.block-item {
-		padding: 30px;
+		padding: 5px;
 	}
 
 	.text-side {
-		padding-right: 30px;
+		padding-right: 5px;
 	}
 
 	.carousel-item {
