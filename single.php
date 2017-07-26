@@ -18,7 +18,7 @@
      <div <?php post_class(); ?>>
         <article>
         <div class="block-item <?php if($colorcounter == 1) { echo 'even-color'; } else { echo 'uneven-color'; } ?>">
-            <div class="text-side col-sm-12 col-md-12 col-lg-12">
+            <div class="text-side text-side-single col-sm-12 col-md-12 col-lg-12">
                       <h1 title="<?php the_title_attribute(); ?>" class="main-title"><?php the_title(); ?></h1>
                 <p><?php the_content(); ?></p>
             </div>            
