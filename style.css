@@ -260,6 +260,12 @@ strong {
 	padding-right: 100px;
 }
 
+.image-side {
+	display: flex;
+	justify-content: center; /* align horizontal */
+	align-items: center; /* align vertical */
+}
+
 .even-color > .text-side,
 .even-color > .text-side p,
 .even-color > .text-side a {
