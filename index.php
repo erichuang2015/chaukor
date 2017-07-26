@@ -13,13 +13,13 @@
       if ( have_posts() ) : 
         while ( have_posts() ) : the_post(); ?>
           <div class="block-item <?php if($colorcounter == 1) { echo 'even-color'; } else { echo 'uneven-color'; } ?>">
-            <div class="text-side col-sm-12 col-md-5 col-lg-5">
+            <div class="text-side col-sm-12 col-md-5 col-lg-6">
                 <h1 title="<?php the_title_attribute(); ?>" class="main-title"><?php the_title(); ?></h1>
                 <p><?php the_excerpt(); ?></p>
                  <a class="btn btn-primary readmore-btn" href="<?php the_permalink(); ?>" role="button" title="<?php the_title_attribute(); ?>" ><?php _e('Read more', 'chaukor'); ?></a>
                 <p class="postdate"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'chaukor'); ?></time></p>         
 </div>            
-            <div class="image-side col-md-7 col-lg-7 hidden-sm-down ">
+            <div class="image-side col-md-7 col-lg-6 hidden-sm-down ">
               <?php
               if ( has_post_thumbnail() ) {
                   the_post_thumbnail('full', ['class' => 'img-fluid', 'title' => 'Feature image']);
