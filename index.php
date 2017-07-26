@@ -24,11 +24,11 @@
                 <h1 title="<?php the_title_attribute(); ?>" class="main-title"><?php the_title(); ?></h1>
                 <p><?php the_excerpt(); ?></p>
                  <a class="btn btn-primary readmore-btn" href="<?php the_permalink(); ?>?bg=<?php echo $colorcounter ?>" role="button" title="<?php the_title_attribute(); ?>" ><?php _e('Read more', 'chaukor'); ?></a>
-                <p class="postdate">
+                <span class="postmeta"><p class="postdate">
                   <i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'chaukor'); ?></time>
                 <?php if (get_theme_mod( 'show_categories', 'show' ) == 'show' ) { ?>
                 <?php if(has_category()) { ?>
-                <p class=><i class="fa fa-list" aria-hidden="true"></i></span>
+                <p class=><i class="fa fa-list" aria-hidden="true"></i>
                 <?php $categories = get_the_category();
                     $separator = ', ';
                     $output = '';
@@ -40,6 +40,7 @@
                         echo trim( $output, $separator );
                     } ?>
                 </p>
+                </span>
                 <?php 
                     }
                 } ?>
