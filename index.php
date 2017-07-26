@@ -15,7 +15,7 @@
       if ( have_posts() ) : 
         while ( have_posts() ) : the_post(); ?>
           <div class="block-item <?php if($colorcounter == 1) { echo 'even-color'; } else { echo 'uneven-color'; } ?>">
-            <div class="text-side col-sm-12 col-md-6 col-lg-6">
+            <div class="text-side col-sm-12 col-md-5 col-lg-5">
                   <a href="<?php the_permalink(); ?>">
                       <h1 title="<?php the_title_attribute(); ?>" class="main-title"><?php the_title(); ?></h1>
                   </a>
@@ -24,7 +24,7 @@
  
          
             </div>            
-            <div class="image-side hidden-sm-down col-md-6 col-lg-6">
+            <div class="image-side hidden-sm-down col-md-7 col-lg-7">
               <?php
               if ( has_post_thumbnail() ) {
                   the_post_thumbnail('full', ['class' => 'img-fluid', 'title' => 'Feature image']);
