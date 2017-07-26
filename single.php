@@ -19,9 +19,7 @@
         <article>
         <div class="block-item <?php if($colorcounter == 1) { echo 'even-color'; } else { echo 'uneven-color'; } ?>">
             <div class="text-side col-sm-12 col-md-12 col-lg-12">
-                  <a href="<?php the_permalink(); ?>">
                       <h1 title="<?php the_title_attribute(); ?>" class="main-title"><?php the_title(); ?></h1>
-                  </a>
                 <p><?php the_content(); ?></p>
             </div>            
             <div class="image-side hidden-sm-down">
