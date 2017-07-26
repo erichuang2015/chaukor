@@ -159,6 +159,7 @@ strong {
 	margin-bottom: 35px;
 	border: 1px solid #b23615;
 	color: white !important;
+	margin-top: 35px;
 }
 
 .even-color > .text-side > .readmore-btn:hover {
