@@ -12,7 +12,6 @@
         ?>
         </div>
       <?php
-     $bgcolor = $_GET['bg'];
       if ( have_posts() ) : 
         while ( have_posts() ) : the_post(); ?>
      <div <?php post_class(); ?>>
@@ -66,7 +65,8 @@
 	          <h3 class="h3-join-the-conversation"><?php _e('Join the conversation', 'canitia'); ?></h3>
        <!-- let user enter a comment -->
       <?php comments_template(); ?>
-        <?php } ?>
+<?php }
+        ?>
 
   
             </div><!-- close block item -->
