@@ -257,15 +257,10 @@ function chaukor_customizer( $wp_customize ) {
 
 	$wp_customize->add_control( 'theme_preset', array(
 		'label' => __('Theme preset', 'chaukor'),
-		'section' => 'colors',
+		'section' => 'settings_section_chaukor_labs',
 		'type' => 'radio',
 		'choices' => array(
-			'default' => __('Grey Wolf (default)', 'chaukor'),
-			'pinkruby' => __('Pink Ruby', 'chaukor'),
-			'pinkmelanite' => __('Pink Melanite', 'chaukor'),
-			'blackopal' => __('Black Opal', 'chaukor'),
-			'brownsinhalite' => __('Brown Sinhalite', 'chaukor'),
-			'bluesapphire' => __('Blue Sapphire', 'chaukor'),
+			'default' => __('Chaukor (default)', 'chaukor'),
 		),
 	) );
 
