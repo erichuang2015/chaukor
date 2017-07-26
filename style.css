@@ -174,7 +174,7 @@ strong {
 
 .comment-reply-link:hover,
 .submit:hover {
-	background-color: #a8ede2;
+	background-color: #b23615;
 	border: 1px solid #b23615 !important;
 }
 
@@ -305,6 +305,7 @@ strong {
 	display: flex;
 	justify-content: center; /* align horizontal */
 	align-items: center; /* align vertical */
+	padding:0;
 }
 
 .even-color > .text-side,
@@ -1156,7 +1157,7 @@ ul.children {
 
 .comment-reply-link, .form-submit > input#submit, input.search-submit{
     cursor: pointer;
-    background-color:#4abdac;
+    background-color:#b23615;
     border: none;
     border-radius: 3px;
 	padding-left: 15px;

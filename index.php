@@ -2,12 +2,19 @@
   get_header(); 
 ?>
 <div class="blocktainer col-md-12 col-lg-12" >
-<div class="image-side hidden-sm-up col-sm-12">
-<?php
-              if ( has_post_thumbnail() ) {
-                  the_post_thumbnail('full', ['class' => 'img-fluid', 'title' => 'Feature image']);
-              }?>
-</div>
+ 
+<?php if ( !get_theme_mod( 'display_featured_content', 'showslider' ) == 'showslider') : ?>
+ <div class="image-side hidden-sm-up col-sm-12">
+<?php  if ( has_post_thumbnail() ) {?>
+
+ <?php the_post_thumbnail('full', ['class' => 'img-fluid', 'title' => 'Feature image']);?>
+          
+ <?php } else { ?>		
+              <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title_attribute(); ?>" width="3840" class="d-block img-fluid wp-post-image" />		
+              <?php }  ?>
+ </div>  
+  <?php  endif;  ?>
+ 
 <?php
       $colorcounter = 0;
       if ( have_posts() ) : 
