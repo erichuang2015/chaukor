@@ -2,11 +2,8 @@
 <footer class="footer">
       <div class="container">
         <p class="text-center">
-            <?php
-              $getActiveTheme = wp_get_theme();
-
-              echo 'Powered by ' . ' <strong>' . $getActiveTheme->get( 'Name' ) . ' </strong>';
-            ?>    
+            <?php  $getActiveTheme = wp_get_theme();?>
+            Powered by <strong><a href="https://github.com/boumannm/chaukor"><?php  echo $getActiveTheme->get( 'Name' ); ?><a/></strong>
         </p>
       </div>
           <!-- close with Wordpress footer aka adminbar etc. -->
