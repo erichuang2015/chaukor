@@ -703,12 +703,19 @@ footer {
 	height: 60px;
 	bottom: 0;
 	width: 100%;
-
 	background-color: #fc4a1a;
 }
 
 footer p {
 	padding-top: 25px;
+}
+
+footer p a {
+	color: white;
+}
+
+footer p a:hover {
+	color: black;
 }
 
 footer > .container > .text-center {
