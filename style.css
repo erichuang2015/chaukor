@@ -39,7 +39,8 @@ body {
 
 .h3-join-the-conversation {
 	margin-left: 30px;
-    margin-bottom: 30px;
+	margin-bottom: 30px;
+	background-color: #4c8c4a;
 }
 
 .container-fluid a {
@@ -268,7 +269,7 @@ strong {
 
 .block-item-single {
 	flex-direction: column !important;
-	background-color: #558b2f;
+	background-color: #4c8c4a;
 }
 
 .even-color {
@@ -619,6 +620,10 @@ img.avatar {
 .author-name {
 	font-size:175%;
 	font-weight: 300 !important;
+}
+
+.author-name > a {
+	color: #b23615;
 }
 
 .author-name a:hover {
@@ -1065,6 +1070,7 @@ EXTERNAL libraries look-n-feel
 *****************************************/
 .comments-wrapper {
 	padding: 30px;
+	background-color: #4c8c4a;
 }
 
 ul.commentlist {
@@ -1109,7 +1115,7 @@ ul.commentlist {
 }
 
 .comment.odd {
-	background-color: #a8ede2;
+	background-color: #66bb6a;
 }
 
 ul.children {
