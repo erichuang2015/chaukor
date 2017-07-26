@@ -221,8 +221,7 @@ function chaukor_customizer( $wp_customize ) {
 		'type' => 'radio',
 		'choices' => array(
 			'showslider' => __('Show Slider', 'chaukor'),
-			'showfeatured' => __('Show Featured Row', 'chaukor'),
-			'hide' => __('Hide all', 'chaukor'),
+			'hide' => __('Hide', 'chaukor'),
 		),
 	) );
 
