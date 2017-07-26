@@ -22,24 +22,24 @@
                       <h1 title="<?php the_title_attribute(); ?>" class="main-title"><?php the_title(); ?></h1>
                 <p><?php the_content(); ?></p>
             </div>            
-            <div class="image-side hidden-sm-down">
+            <div class="image-side d-none">
               <?php
               if ( has_post_thumbnail() ) {
                   the_post_thumbnail('full', ['class' => 'img-fluid', 'title' => 'Feature image']);
             }?>
-            <span class="badge post-badge">
+            <span class="">
                 <p><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'chaukor'); ?></time></p>
             </span>
-            <div class="post-info hidden-xs-up">
-                <p class="badge"><i class="fa fa-user" aria-hidden="true"></i><?php the_author_posts_link();?></p>
+            <div class="post-info">
+                <p class=><i class="fa fa-user" aria-hidden="true"></i><?php the_author_posts_link();?></p>
                 <?php if(has_tag()) { ?>
                     <?php if ( get_theme_mod( 'show_tags', 'show' ) == 'show' ) : ?>
-                        <p class="badge"><?php the_tags( '<i class="fa fa-tags" aria-hidden="true"></i>', ', ', ' ' ); ?> </p>
+                        <p class=""><?php the_tags( '<i class="fa fa-tags" aria-hidden="true"></i>', ', ', ' ' ); ?> </p>
                         <?php endif; ?>
                 <?php } ?>
                 <?php if (get_theme_mod( 'show_categories', 'show' ) == 'show' ) { ?>
                 <?php if(has_category()) { ?>
-                <p class="badge"><i class="fa fa-list" aria-hidden="true"></i></span>
+                <p class=><i class="fa fa-list" aria-hidden="true"></i></span>
                 <?php $categories = get_the_category();
                     $separator = ', ';
                     $output = '';
