@@ -29,12 +29,15 @@
             <span class="postmeta postmeta-single">
                 <p><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'chaukor'); ?></time></p>
                 <div class="post-info">
+                     <?php if ( get_theme_mod( 'show_author_section', 'hide' ) == 'hide' ) :?>
+                    <p><i class="fa fa-user" aria-hidden="true"></i><?php the_author_posts_link();?></p>
+                    <?php endif; ?>
                     <?php if(has_tag()) { ?>
                         <?php if ( get_theme_mod( 'show_tags', 'show' ) == 'show' ) : ?>
                         <p>
                             <?php the_tags( '<i class="fa fa-tags" aria-hidden="true"></i>', ', ', ' ' ); ?> 
                             <?php endif; ?>
-                            </p>
+                        </p>
                     <?php } ?>
                     <?php if (get_theme_mod( 'show_categories', 'show' ) == 'show' ) { ?>
                     <?php if(has_category()) { ?>
