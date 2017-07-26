@@ -22,7 +22,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 body {
 	min-height: calc(100vh - 32px);
   font-family: 'Open Sans', sans-serif;
-  background-color: black;
 }
 
 .flex-grow {
@@ -39,7 +38,7 @@ body {
 }
 
 .h3-join-the-conversation {
-	margin-top: 40px;
+	margin-left: 30px;
     margin-bottom: 30px;
 }
 
@@ -156,21 +155,25 @@ strong {
 .readmore-btn {
 	width: initial;
 	background-color: #b23615;
-	color: white !important;
 	align-self: flex-start;
 	margin-bottom: 35px;
 	border: 1px solid #b23615;
+	color: white !important;
 }
 
-.readmore-btn:hover {
-	background-color: #5b5a5e;
-
+.even-color > .text-side > .readmore-btn:hover {
+	color: black !important;
+	background-color: #f1c40f !important;
 }
 
-.btn:hover, 
+.uneven-color > .text-side > .readmore-btn:hover {
+	color: black !important;
+	background-color: #4abdac !important;
+}
+
 .comment-reply-link:hover,
 .submit:hover {
-	background-color: #5b5a5e;
+	background-color: #a8ede2;
 	border: 1px solid #b23615 !important;
 }
 
@@ -514,6 +517,7 @@ ul.pings.commentlist {
 /* pagination within a post/page */
 .pagination-within {
 	justify-content: center;
+	background-color:inherit !important;
 }
 
 .pagination-within li { 
@@ -1057,6 +1061,10 @@ EXTERNAL libraries look-n-feel
 	WORDPRESS COMMENTS
 
 *****************************************/
+.comments-wrapper {
+	padding: 30px;
+}
+
 ul.commentlist {
     padding-left: 0;
 }
@@ -1099,7 +1107,7 @@ ul.commentlist {
 }
 
 .comment.odd {
-	background-color: #f8f8f8;
+	background-color: #a8ede2;
 }
 
 ul.children {
@@ -1117,7 +1125,6 @@ ul.children {
 }
 
 .comment-author.vcard {
-	border-bottom: 1px solid #f8f8f8;
 	margin-top: -5px;
 	padding-bottom: 10px;
 }
@@ -1140,12 +1147,11 @@ ul.children {
     flex-direction: row;
     justify-content: flex-end;
 	font-size: 14px;
-	border-bottom: 1px solid #f8f8f8;
 }
 
 .comment-reply-link, .form-submit > input#submit, input.search-submit{
     cursor: pointer;
-    background-color:#979797;
+    background-color:#4abdac;
     border: none;
     border-radius: 3px;
 	padding-left: 15px;
