@@ -22,26 +22,7 @@
                 <p><?php the_excerpt(); ?></p>
                 <i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'chaukor'); ?></time>
  
-                <span class="badge">
-
-                 <?php if (get_theme_mod( 'show_categories', 'show' ) == 'show' ) { ?>
-                <?php if(has_category()) { ?>
-                <p class="categorylist"><i class="fa fa-list" aria-hidden="true"></i>
-                <?php $categories = get_the_category();
-                    $separator = ', ';
-                    $output = '';
-                    if ( ! empty( $categories ) ) {
-                        foreach( $categories as $category ) {
-                            $output .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '">' 
-                            . esc_html( $category->name ) . '</a>' . $separator;
-                        }
-                        echo trim( $output, $separator );
-                    } ?>
-                </p>
-                <?php 
-                    }
-                } ?>
-            </span>             
+         
             </div>            
             <div class="image-side hidden-sm-down col-md-6 col-lg-6">
               <?php
