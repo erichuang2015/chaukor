@@ -260,8 +260,18 @@ strong {
 	padding-right: 100px;
 	display: flex;
 	justify-content: center; /* align horizontal */
-
 	flex-direction: column;
+}
+
+.text-side > .postdate {
+    justify-content: flex-end;
+    display: flex;
+}
+
+.text-side > p > time {
+	font-size: 15px;
+    font-style: italic;
+    color: #5b5a5e;
 }
 
 .image-side {
@@ -335,13 +345,6 @@ a {
     font-size: 20px;
     font-style: italic;
     color: #5b5a5e !important;
-}
-
-.badge > time {
-	font-size: 20px;
-    font-style: italic;
-    color: #5b5a5e;
-    /* float: right; */
 }
 
 .post-badge {
@@ -1007,6 +1010,11 @@ EXTERNAL libraries look-n-feel
 .fa-user,
 .fa-clock-o {
 	margin-right: 10px;
+	color: #b23615;
+}
+
+.fa-clock-o {
+	margin-top: 3px;
 }
 
 
