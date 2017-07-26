@@ -244,7 +244,7 @@ strong {
 	display: flex;
 	flex-direction: row;
 	height: auto;
-    min-height: calc(100vh - 50px);
+    min-height: 100vh;
 }
 
 .even-color {
@@ -338,7 +338,7 @@ a {
 }
 
 .post-badge {
-    position: absolute;
+    position: relative;
 	top: 0;
 	font-size: 20px;
 	font-style: italic;
@@ -644,10 +644,10 @@ img.avatar {
 
 *****************************************/
 footer {
-	height: 50px;
+	height: 60px;
 	bottom: 0;
 	width: 100%;
-	position: fixed;
+
 	background-color: #fc4a1a;
 }
 

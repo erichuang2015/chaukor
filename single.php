@@ -32,7 +32,7 @@
             <span class="badge post-badge">
                 <p><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'chaukor'); ?></time></p>
             </span>
-            <div class="post-info">
+            <div class="post-info hidden-xs-up">
                 <p class="badge"><i class="fa fa-user" aria-hidden="true"></i><?php the_author_posts_link();?></p>
                 <?php if(has_tag()) { ?>
                     <?php if ( get_theme_mod( 'show_tags', 'show' ) == 'show' ) : ?>
