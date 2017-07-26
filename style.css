@@ -159,6 +159,7 @@ strong {
 	color: white !important;
 	align-self: flex-start;
 	margin-bottom: 35px;
+	border: 1px solid #b23615;
 }
 
 .readmore-btn:hover {
@@ -872,6 +873,14 @@ footer > .container > .text-center {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
 
+	.block-item {
+		padding: 30px;
+	}
+
+	.text-side {
+		padding-right: 30px;
+	}
+
 	.carousel-item {
 		height: 300px;
 	}
@@ -940,6 +949,10 @@ footer > .container > .text-center {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199px) { 
+
+	.block-item {
+		padding: 30px;
+	}
 
 	.carousel-item {
 		height: 400px;
