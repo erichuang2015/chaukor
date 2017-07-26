@@ -260,10 +260,6 @@ strong {
 	padding-right: 100px;
 }
 
-.image-side {
-	padding-left: 100px;
-}
-
 .even-color > .text-side,
 .even-color > .text-side p,
 .even-color > .text-side a {
@@ -677,10 +673,6 @@ footer > .container > .text-center {
 		padding-right: 30px;
 	}
 
-	.image-side {
-		padding-left: 30px;
-	}
-
 	.carousel-item {
 		height: 300px;
 	}
@@ -784,10 +776,6 @@ footer > .container > .text-center {
 
 	.text-side {
 		padding-right: 30px;
-	}
-
-	.image-side {
-		padding-left: 30px;
 	}
 
 	.carousel-item {
