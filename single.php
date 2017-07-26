@@ -32,11 +32,14 @@
                     <i class="fa fa-user" aria-hidden="true"></i><?php the_author_posts_link();?></p>
                     <?php if(has_tag()) { ?>
                         <?php if ( get_theme_mod( 'show_tags', 'show' ) == 'show' ) : ?>
+                        <p>
                             <?php the_tags( '<i class="fa fa-tags" aria-hidden="true"></i>', ', ', ' ' ); ?> 
                             <?php endif; ?>
+                            </p>
                     <?php } ?>
                     <?php if (get_theme_mod( 'show_categories', 'show' ) == 'show' ) { ?>
                     <?php if(has_category()) { ?>
+                    <p>
                             <i class="fa fa-list" aria-hidden="true"></i></span>
                             <?php $categories = get_the_category();
                                 $separator = ', ';
@@ -47,7 +50,8 @@
                                         . esc_html( $category->name ) . '</a>' . $separator;
                                     }
                                     echo trim( $output, $separator );
-                                } ?>
+                            } ?>
+                     </p>
                             <?php 
                                 }
                     } ?>

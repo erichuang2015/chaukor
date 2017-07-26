@@ -294,7 +294,8 @@ strong {
     display: flex;
 }
 
-.text-side > p > time {
+.text-side > p > time,
+.postmeta > time {
 	font-size: 15px;
     font-style: italic;
     color: #5b5a5e;
@@ -386,9 +387,12 @@ a {
 	    color: #5b5a5e;
 }
 
+.post-info a:hover {
+	color:#b23615;;
+}
+
 .post-info {
     font-size: 15px;
-    /* font-style: italic; */
     font-weight: 600;
 }
 
