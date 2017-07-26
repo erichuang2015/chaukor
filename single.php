@@ -17,7 +17,7 @@
         while ( have_posts() ) : the_post(); ?>
      <div <?php post_class(); ?>>
         <article>
-        <div class="block-item <?php if($colorcounter == 1) { echo 'even-color'; } else { echo 'uneven-color'; } ?>">
+        <div class="block-item block-item-single <?php if($colorcounter == 1) { echo 'even-color'; } else { echo 'uneven-color'; } ?>">
             <div class="text-side text-side-single col-sm-12 col-md-12 col-lg-12">
                       <h1 title="<?php the_title_attribute(); ?>" class="main-title"><?php the_title(); ?></h1>
                 <p><?php the_content(); ?></p>
@@ -57,7 +57,17 @@
                 </div><!-- close post-info -->
             
             </div><!-- close image-side -->
- 
+         <?php if ( get_theme_mod( 'show_author_section', 'show' ) == 'show' ) :
+            get_template_part( 'partials/authorsection' ); 
+        endif; ?>
+       </article><!-- close article -->
+      <?php if( comments_open() ) { ?>
+	          <h3 class="h3-join-the-conversation"><?php _e('Join the conversation', 'canitia'); ?></h3>
+        <?php }
+        ?>
+       <!-- let user enter a comment -->
+      <?php comments_template(); ?>
+  
             </div><!-- close block item -->
          </article>
          </div><!-- close post class-->   
