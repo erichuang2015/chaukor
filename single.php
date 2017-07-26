@@ -22,39 +22,35 @@
                 <p><?php the_content(); ?></p>
                  <?php wp_link_pages('before=<ul class="pagination pagination-within center-align" role="navigation">&link_before=<li>&link_after=</li>&after=</ul>'); ?>
             </div>            
-            <div class="image-side d-none">
-              <?php
-              if ( has_post_thumbnail() ) {
-                  the_post_thumbnail('full', ['class' => 'img-fluid', 'title' => 'Feature image']);
-            }?>
-            <span class="">
+
+            <span class="postmeta">
                 <p><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'chaukor'); ?></time></p>
+                    <div class="post-info">
+                        <p class=><i class="fa fa-user" aria-hidden="true"></i><?php the_author_posts_link();?></p>
+                        <?php if(has_tag()) { ?>
+                            <?php if ( get_theme_mod( 'show_tags', 'show' ) == 'show' ) : ?>
+                                <p class=""><?php the_tags( '<i class="fa fa-tags" aria-hidden="true"></i>', ', ', ' ' ); ?> </p>
+                                <?php endif; ?>
+                        <?php } ?>
+                                        <?php if (get_theme_mod( 'show_categories', 'show' ) == 'show' ) { ?>
+                        <?php if(has_category()) { ?>
+                        <p class=><i class="fa fa-list" aria-hidden="true"></i></span>
+                        <?php $categories = get_the_category();
+                            $separator = ', ';
+                            $output = '';
+                            if ( ! empty( $categories ) ) {
+                                foreach( $categories as $category ) {
+                                    $output .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '">' 
+                                    . esc_html( $category->name ) . '</a>' . $separator;
+                                }
+                                echo trim( $output, $separator );
+                            } ?>
+                        </p>
+                        <?php 
+                            }
+                        } ?>
+                        </div><!-- close post-info -->            
             </span>
-            <div class="post-info">
-                <p class=><i class="fa fa-user" aria-hidden="true"></i><?php the_author_posts_link();?></p>
-                <?php if(has_tag()) { ?>
-                    <?php if ( get_theme_mod( 'show_tags', 'show' ) == 'show' ) : ?>
-                        <p class=""><?php the_tags( '<i class="fa fa-tags" aria-hidden="true"></i>', ', ', ' ' ); ?> </p>
-                        <?php endif; ?>
-                <?php } ?>
-                <?php if (get_theme_mod( 'show_categories', 'show' ) == 'show' ) { ?>
-                <?php if(has_category()) { ?>
-                <p class=><i class="fa fa-list" aria-hidden="true"></i></span>
-                <?php $categories = get_the_category();
-                    $separator = ', ';
-                    $output = '';
-                    if ( ! empty( $categories ) ) {
-                        foreach( $categories as $category ) {
-                            $output .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '">' 
-                            . esc_html( $category->name ) . '</a>' . $separator;
-                        }
-                        echo trim( $output, $separator );
-                    } ?>
-                </p>
-                <?php 
-                    }
-                } ?>
-                </div><!-- close post-info -->
             
             </div><!-- close image-side -->
          <?php if ( get_theme_mod( 'show_author_section', 'show' ) == 'show' ) :

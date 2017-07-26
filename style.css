@@ -385,11 +385,13 @@ a {
 }
 
 .post-info {
-    position: absolute;
-    bottom: 0;
-	right: 0;
-	font-size: 20px;
-	font-style: italic;
+    font-size: 15px;
+    /* font-style: italic; */
+    font-weight: 600;
+}
+
+.postmeta {
+	margin-left:15px;
 }
 
 article > h1:not(:first-child), 
