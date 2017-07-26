@@ -391,13 +391,18 @@ a {
 	color:#b23615;;
 }
 
-.post-info {
+.post-info,
+.postmeta > p > time {
     font-size: 15px;
     font-weight: 600;
 }
 
 .postmeta {
-	margin-left:15px;
+	margin-left:0px;
+}
+
+.postmeta-single {
+	margin-left:15px !important;
 }
 
 article > h1:not(:first-child), 
