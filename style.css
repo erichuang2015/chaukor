@@ -154,10 +154,10 @@ strong {
 }
 
 .readmore-btn {
-	width: 75px;
+	width: initial;
 	background-color: #b23615;
 	color: white !important;
-	align-self: flex-end;
+	align-self: flex-start;
 	margin-bottom: 35px;
 }
 
@@ -279,7 +279,7 @@ strong {
 }
 
 .text-side > .postdate {
-    justify-content: flex-end;
+    justify-content: flex-start;
     display: flex;
 }
 
