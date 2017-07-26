@@ -258,6 +258,10 @@ strong {
 .text-side {
 	font-weight: 600;
 	padding-right: 100px;
+	display: flex;
+	justify-content: center; /* align horizontal */
+
+	flex-direction: column;
 }
 
 .image-side {

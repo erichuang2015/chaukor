@@ -6,9 +6,7 @@
 <?php
               if ( has_post_thumbnail() ) {
                   the_post_thumbnail('full', ['class' => 'img-fluid', 'title' => 'Feature image']);
-              }
-
-?>
+              }?>
 </div>
 <?php
       $colorcounter = 0;
@@ -20,15 +18,17 @@
                       <h1 title="<?php the_title_attribute(); ?>" class="main-title"><?php the_title(); ?></h1>
                   </a>
                 <p><?php the_excerpt(); ?></p>
-                <i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'chaukor'); ?></time>
- 
+                <p><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'chaukor'); ?></time></p>
          
             </div>            
-            <div class="image-side hidden-sm-down col-md-7 col-lg-7">
+            <div class="image-side col-md-7 col-lg-7 hidden-sm-down ">
               <?php
               if ( has_post_thumbnail() ) {
                   the_post_thumbnail('full', ['class' => 'img-fluid', 'title' => 'Feature image']);
-              }?>
+              }
+              else { ?>		
+              <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title_attribute(); ?>" width="3840" class="d-block img-fluid wp-post-image" />		
+              <?php }  ?>
             </div>
           </div>
           <?php $colorcounter++; 
