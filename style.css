@@ -269,6 +269,8 @@ strong {
 
 .block-item-single {
 	flex-direction: column !important;
+	background-color: lightgray;
+	padding-top: 50px !important;
 }
 
 .even-color {
