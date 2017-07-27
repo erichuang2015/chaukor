@@ -177,7 +177,7 @@ function chaukor_customizer( $wp_customize ) {
 	$wp_customize->add_setting(
 		'display_featured_content',
 		array(
-			'default' => 'show',
+			'default' => 'showfeatured',
 			'sanitize_callback' => 'chaukor_sanitize_select',
 		)
 	);
@@ -185,7 +185,7 @@ function chaukor_customizer( $wp_customize ) {
 	$wp_customize->add_setting(
 		'show_tags',
 		array(
-			'default' => 'show',
+			'default' => 'showtags',
 			'sanitize_callback' => 'chaukor_sanitize_select',
 		)
 	);
@@ -193,7 +193,7 @@ function chaukor_customizer( $wp_customize ) {
 	$wp_customize->add_setting(
 		'show_categories',
 		array(
-			'default' => 'show',
+			'default' => 'showcategories',
 			'sanitize_callback' => 'chaukor_sanitize_select',
 		)
 	);
@@ -201,7 +201,7 @@ function chaukor_customizer( $wp_customize ) {
 	$wp_customize->add_setting(
 		'show_author_section',
 		array(
-			'default' => 'show',
+			'default' => 'showauthor',
 			'sanitize_callback' => 'chaukor_sanitize_select',
 		)
 	);
@@ -214,14 +214,13 @@ function chaukor_customizer( $wp_customize ) {
 		)
 	);
 
-
 	$wp_customize->add_control( 'display_featured_content', array(
 		'label' => __('Featured content', 'chaukor'),
 		'section' => 'settings_section_chaukor',
 		'type' => 'radio',
 		'choices' => array(
 			'showslider' => __('Show Slider', 'chaukor'),
-			'hide' => __('Hide', 'chaukor'),
+			'hideslider' => __('Hide', 'chaukor'),
 		),
 	) );
 
@@ -230,8 +229,8 @@ function chaukor_customizer( $wp_customize ) {
 		'section' => 'settings_section_chaukor',
 		'type' => 'radio',
 		'choices' => array(
-			'show' => __('Show Tags', 'chaukor'),
-			'hide' => __('Hide Tags', 'chaukor'),
+			'showtags' => __('Show Tags', 'chaukor'),
+			'hidetags' => __('Hide Tags', 'chaukor'),
 		),
 	) );
 
@@ -240,8 +239,8 @@ function chaukor_customizer( $wp_customize ) {
 		'section' => 'settings_section_chaukor',
 		'type' => 'radio',
 		'choices' => array(
-			'show' => __('Show Categories', 'chaukor'),
-			'hide' => __('Hide Categories', 'chaukor'),
+			'showcategories' => __('Show Categories', 'chaukor'),
+			'hidecategories' => __('Hide Categories', 'chaukor'),
 		),
 	) );
 
@@ -250,8 +249,8 @@ function chaukor_customizer( $wp_customize ) {
 		'section' => 'settings_section_chaukor',
 		'type' => 'radio',
 		'choices' => array(
-			'show' => __('Show Author section', 'chaukor'),
-			'hide' => __('Hide Author section', 'chaukor'),
+			'showauthor' => __('Show Author section', 'chaukor'),
+			'hideauthor' => __('Hide Author section', 'chaukor'),
 		),
 	) );
 
