@@ -37,7 +37,7 @@
 </header>
     <?php //show slider
     if ( is_home() || is_category() || is_tag() || is_author() || is_search() ) {
-        if ( get_theme_mod( 'display_featured_content', 'showslider' ) == 'showslider') :
+        if ( get_theme_mod( 'display_featured_content' ) == 'showslider') :
             get_template_part( 'partials/slider' );
         endif;
     }

@@ -3,7 +3,7 @@
 ?>
 <div class="blocktainer col-md-12 col-lg-12" >
  
-<?php if ( !get_theme_mod( 'display_featured_content', 'showslider' ) == 'showslider') : ?>
+<?php if ( !get_theme_mod( 'display_featured_content' ) == 'showslider') : ?>
  <div class="image-side hidden-sm-up col-sm-12">
 <?php  if ( has_post_thumbnail() ) {?>
 
@@ -26,7 +26,7 @@
                  <a class="btn btn-primary readmore-btn" href="<?php the_permalink(); ?>" role="button" title="<?php the_title_attribute(); ?>" ><?php _e('Read more', 'chaukor'); ?></a>
                 <span class="postmeta"><p class="postdate">
                   <i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'chaukor'); ?></time>
-                <?php if (get_theme_mod( 'show_categories', 'show' ) == 'show' ) { ?>
+                <?php if (get_theme_mod( 'show_categories' ) == 'showcategories' ) { ?>
                 <?php if(has_category()) { ?>
                 <p class=><i class="fa fa-list" aria-hidden="true"></i>
                 <?php $categories = get_the_category();

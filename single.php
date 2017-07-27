@@ -21,7 +21,7 @@
             <h1 title="<?php the_title_attribute(); ?>" class="main-title"><?php the_title(); ?></h1>
             <p><?php the_content(); ?></p>
                  <?php wp_link_pages('before=<ul class="pagination pagination-within center-align" role="navigation">&link_before=<li>&link_after=</li>&after=</ul>'); ?>
-                     <?php if ( get_theme_mod( 'show_author_section', 'show' ) == 'show' ) :
+                     <?php if ( get_theme_mod( 'show_author_section' ) == 'showauthor' ) :
                         get_template_part( 'partials/authorsection' ); 
                     endif; ?>
             </div>            
@@ -29,17 +29,17 @@
             <span class="postmeta postmeta-single">
                 <p><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'chaukor'); ?></time></p>
                 <div class="post-info">
-                     <?php if ( get_theme_mod( 'show_author_section', 'hide' ) == 'hide' ) :?>
+                     <?php if ( get_theme_mod( 'show_author_section' ) == 'hideauthor' ) :?>
                     <p><i class="fa fa-user" aria-hidden="true"></i><?php the_author_posts_link();?></p>
                     <?php endif; ?>
                     <?php if(has_tag()) { ?>
-                        <?php if ( get_theme_mod( 'show_tags', 'show' ) == 'show' ) : ?>
+                        <?php if ( get_theme_mod( 'show_tags' ) == 'showtags' ) : ?>
                         <p>
                             <?php the_tags( '<i class="fa fa-tags" aria-hidden="true"></i>', ', ', ' ' ); ?> 
                             <?php endif; ?>
                         </p>
                     <?php } ?>
-                    <?php if (get_theme_mod( 'show_categories', 'show' ) == 'show' ) { ?>
+                    <?php if (get_theme_mod( 'show_categories' ) == 'showcategories' ) { ?>
                     <?php if(has_category()) { ?>
                     <p>
                             <i class="fa fa-list" aria-hidden="true"></i></span>
