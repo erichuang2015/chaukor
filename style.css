@@ -186,7 +186,7 @@ strong {
 *****************************************/
 
 header {
-	padding-top: 25px;
+	padding-top: 35px;
 }
 
 .navbar {
@@ -207,7 +207,7 @@ header {
 
 .sitedescription {
 	background-color: #fc4a1a;
-	padding: 50px;	
+	padding: 75px;	
 	text-align: center;
 	color: white;
 	font-weight: 300;
@@ -743,7 +743,19 @@ footer > .container > .text-center {
 *****************************************/
 
 @media (max-width: 575px) {  
+	header {
+		padding-top: 0;
+	}
 
+	.navbar-brand {
+		font-size: 1.3rem;
+	}
+
+	.sitedescription {
+		padding: 25px;
+		font-size: 1.1rem;
+	}
+	
 	.block-item {
 		padding: 5px;
 	}
