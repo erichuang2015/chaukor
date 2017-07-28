@@ -185,6 +185,10 @@ strong {
 
 *****************************************/
 
+header {
+	padding-top: 25px;
+}
+
 .navbar {
 	background-color: #fc4a1a;
 	padding:0;
@@ -199,6 +203,15 @@ strong {
 
 .navbar-light .navbar-toggler {
 	border: 0;
+}
+
+.sitedescription {
+	background-color: #fc4a1a;
+	padding: 50px;	
+	text-align: center;
+	color: white;
+	font-weight: 300;
+	font-size: 25px;
 }
 
 /* color of clickable header */
