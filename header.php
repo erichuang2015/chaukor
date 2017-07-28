@@ -34,6 +34,13 @@
     <?php bootstrap_nav(); ?>
   </div>
 </nav>
+<?php 
+if ( get_bloginfo( 'description' ) ) : ?>
+    <div class="sitedescription">
+        <?php bloginfo( 'description' );?>
+    </div>
+<?php endif; ?>
+
 </header>
     <?php //show slider
     if ( is_home() || is_category() || is_tag() || is_author() || is_search() ) {
