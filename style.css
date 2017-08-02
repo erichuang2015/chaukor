@@ -4,7 +4,7 @@ Theme URI:
 Author: Michael Boumann
 Author URI: http://www.michaelboumann.info
 Description: Boxy theme made for mobile but works great for desktop.
-Version: 0.1
+Version: 0.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column custom-menu, custom-logo, featured-images, sticky-post, theme-options, threaded-comments, translation-ready
@@ -20,7 +20,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 *****************************************/
 body {
-	min-height: calc(100vh - 32px);
+  min-height: calc(100vh - 32px);
   font-family: 'Open Sans', sans-serif;
   background-color: #fc4a1a;
 }
@@ -184,17 +184,6 @@ strong {
   HEADER / NAVBAR / NAVIGATION
 
 *****************************************/
-
-.sticky.is-sticky {
-  position: fixed !important;
-  left: 0;
-  right: 0;
-  top: 0;
-  z-index: 1000;
-  width: 100%;
-}
-
-
 header {
 	padding-top: 35px;
 }
