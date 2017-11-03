@@ -8,7 +8,6 @@ Chaukor is a Wordpress theme based on boxes/squares. Chaukor is a responsive the
 - Show **Featured posts** (sticky) in a **slider** 
 - Custom ~~tag, category, author, search and error pages~~ (working on it). 
 - Custom **Chaukor Settings**
-- Custom **Chaukor Labs** - for early feature testing and usage. Use at your own risk ;).
 - **Translation support** - includes English and Dutch languages
 
 # Chaukor Settings - theme specific custom options
@@ -24,7 +23,7 @@ Alpha
 
 ## Libraries used
 - Font Awesome 4.7.0
-- Bootstrap v4 (alpha)
+- Bootstrap v4 (beta2)
 - JQuery (the Wordpress included version)
 - [Bootstrap Navwalker](https://github.com/wp-bootstrap/wp-bootstrap-navwalker)
 
