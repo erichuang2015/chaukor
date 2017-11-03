@@ -1,0 +1,175 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Cerulean for Wordpress\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-07-26 16:42+0000\n"
+"PO-Revision-Date: 2017-07-26 16:43+0000\n"
+"Last-Translator: bouwlamp <michael@michaelboumann.info>\n"
+"Language-Team: Dutch\n"
+"Language: nl-NL\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: index.php:26
+msgid "Read more"
+msgstr "Lees meer"
+
+#: functions.php:224
+msgid "Hide"
+msgstr "Verbergen"
+
+#. Name of the theme
+msgid "Chaukor"
+msgstr "Chaukor"
+
+#: 404.php:10
+msgid "Error"
+msgstr "Foutmelding"
+
+#: 404.php:12
+msgid ""
+"This post/page doesnt exist anymore or has been renamed. Try searching for "
+"it."
+msgstr ""
+"Deze post/pagina bestaat niet meer of is van naam veranderd. Probeer het "
+"onderstaande zoekveld om uw post te vinden."
+
+#: searchform.php:1
+msgid "Search"
+msgstr "Zoeken"
+
+#: searchform.php:6
+msgctxt "placeholder"
+msgid "What are you looking for?"
+msgstr "Waar zoek je naar?"
+
+#: searchform.php:8
+msgctxt "label"
+msgid "Search for:"
+msgstr "Zoeken naar:"
+
+#: searchform.php:11
+msgctxt "submit button"
+msgid "Go"
+msgstr "Gaan"
+
+#: index.php:28 search.php:36 single.php:30
+msgid "ago"
+msgstr "geleden"
+
+#: index.php:68 single.php:79
+msgid "Sorry, it seems there are no posts available."
+msgstr "Sorry, het lijkt erop dat er geen berichten beschikbaar zijn. "
+
+#: functions.php:43
+msgid "Header Menu"
+msgstr "Hoofdnavigatie"
+
+#: functions.php:162
+msgid "chaukor Settings"
+msgstr "chaukor Instellingen"
+
+#: functions.php:163
+msgid "Tweak chaukor to your liking."
+msgstr "Stel chaukor in zoals jij dat wilt."
+
+#: functions.php:171
+msgid "chaukor Labs"
+msgstr "chaukor experimenten"
+
+#: functions.php:172
+msgid "Experimental chaukor Labs features."
+msgstr "Experimentele chaukor features."
+
+#: functions.php:219
+msgid "Featured content"
+msgstr "Aanbevolen content"
+
+#: functions.php:223
+msgid "Show Slider"
+msgstr "Laat Slider zien"
+
+#: functions.php:229 functions.php:233
+msgid "Show Tags"
+msgstr "Laat tags zien"
+
+#: functions.php:234
+msgid "Hide Tags"
+msgstr "Verberg tags"
+
+#: functions.php:239 functions.php:243
+msgid "Show Categories"
+msgstr "Laat categorieën zien"
+
+#: functions.php:244
+msgid "Hide Categories"
+msgstr "Verberg categorieën"
+
+#: functions.php:249 functions.php:253
+msgid "Show Author section"
+msgstr "Laat auteur sectie zien"
+
+#: functions.php:254
+msgid "Hide Author section"
+msgstr "Verberg auteur sectie"
+
+#: functions.php:259
+msgid "Theme preset"
+msgstr "Thema preset"
+
+#: functions.php:263
+msgid "Grey Wolf (default)"
+msgstr "Grey Wolf (standaard)"
+
+#: functions.php:264
+msgid "Pink Ruby"
+msgstr "Pink Ruby"
+
+#: functions.php:265
+msgid "Pink Melanite"
+msgstr "Pink Melanite"
+
+#: functions.php:266
+msgid "Black Opal"
+msgstr "Black Opal"
+
+#: functions.php:267
+msgid "Brown Sinhalite"
+msgstr "Brown Sinhalite"
+
+#: functions.php:268
+msgid "Blue Sapphire"
+msgstr "Blue Sapphire"
+
+#. Name of the template
+msgid "Search Page"
+msgstr "Zoekpagina"
+
+#: search.php:18
+msgid "Results for "
+msgstr "Resultaten voor"
+
+#: search.php:46
+msgid "Sorry, it seems this search query has no posts."
+msgstr "Sorry, er zijn geen resultaten gevonden op basis van uw zoektermen."
+
+#. Description of the theme
+msgid ""
+"Elegant yet simple. Simplicity with features. Custom "
+"post/tag/page/archive/error pages, dynamic nav-menu's, theme color presets "
+"and more."
+msgstr ""
+"Elegant en toch simpel. Simpliciteit met functionaliteit. Volledig "
+"aangepaste post/tag/page/archief en foutpagina's, dynamische navigatie, "
+"theme kleurpresets en meer."
+
+#. Author of the theme
+msgid "Michael Boumann"
+msgstr "Michael Boumann"
+
+#. Author URI of the theme
+msgid "http://www.michaelboumann.info"
+msgstr "http://www.michaelboumann.info"
