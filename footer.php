@@ -3,7 +3,7 @@
       <div class="container">
         <p class="text-center">
             <?php  $getActiveTheme = wp_get_theme();?>
-            Powered by <strong><a href="https://github.com/boumannm/chaukor" target="_blank"><?php  echo $getActiveTheme->get( 'Name' ); ?></a></strong>
+            Powered by <strong><a href="https://michaelboumann.info/#chaukor" target="_blank"><?php  echo $getActiveTheme->get( 'Name' ); ?></a></strong>
         </p>
       </div>
           <!-- close with Wordpress footer aka adminbar etc. -->
