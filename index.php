@@ -25,7 +25,7 @@
                 <p><?php the_excerpt(); ?></p>
                  <a class="btn btn-primary readmore-btn" href="<?php the_permalink(); ?>" role="button" title="<?php the_title_attribute(); ?>" ><?php _e('Read more', 'chaukor'); ?></a>
                 <span class="postmeta"><p class="postdate">
-                  <i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'chaukor'); ?></time>
+                    <i class="far fa-clock"></i><time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'chaukor'); ?></time>
                 <?php if (get_theme_mod( 'show_categories' ) == 'showcategories' ) { ?>
                 <?php if(has_category()) { ?>
                 <p class=><i class="fa fa-list" aria-hidden="true"></i>
