@@ -31,7 +31,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 body {
   min-height: calc(100vh - 32px);
   font-family: 'Open Sans', sans-serif;
-  background-color: #fc4a1a;
+  background-color: #BD0D25 !important;
 }
 
 .flex-grow {
@@ -198,7 +198,7 @@ header {
 }
 
 .navbar {
-	background-color: #fc4a1a;
+	background-color: #BD0D25 !important;
 	padding:0;
 }
 
@@ -214,7 +214,7 @@ header {
 }
 
 .sitedescription {
-	background-color: #fc4a1a;
+	background-color: #BD0D25 !important;
 	padding: 75px;	
 	text-align: center;
 	color: white;
