@@ -298,11 +298,11 @@ header {
 }
 
 .even-color {
-	background-color:#4abdac;
+	background-color:#337f4d !important;
 }
 
 .uneven-color {
-	background-color: #f1c40f;
+	background-color: #c18317 !important;
 }
 
 .text-side {
