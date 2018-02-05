@@ -26,24 +26,7 @@
                  <a class="btn btn-primary readmore-btn" href="<?php the_permalink(); ?>" role="button" title="<?php the_title_attribute(); ?>" ><?php _e('Read more', 'chaukor'); ?></a>
                 <span class="postmeta"><p class="postdate">
                     <i class="far fa-clock"></i><time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'chaukor'); ?></time>
-                <?php if (get_theme_mod( 'show_categories' ) == 'showcategories' ) { ?>
-                <?php if(has_category()) { ?>
-                <p class=><i class="fa fa-list" aria-hidden="true"></i>
-                <?php $categories = get_the_category();
-                    $separator = ', ';
-                    $output = '';
-                    if ( ! empty( $categories ) ) {
-                        foreach( $categories as $category ) {
-                            $output .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '">' 
-                            . esc_html( $category->name ) . '</a>' . $separator;
-                        }
-                        echo trim( $output, $separator );
-                    } ?>
-                </p>
                 </span>
-                <?php 
-                    }
-                } ?>
                 
                 </p>         
                 </div>            

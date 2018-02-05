@@ -289,6 +289,7 @@ header {
 	display: flex;
 	flex-direction: row;
 	height: auto;
+	height: 100vh;	
 }
 
 .block-item-single {
@@ -1108,12 +1109,12 @@ EXTERNAL libraries look-n-feel
 *****************************************/
 .fa-list,
 .fa-tags,
-.fa-clock-o {
+.fa-clock {
 	margin-right: 10px;
 	color: #b23615;
 }
 
-.fa-clock-o {
+.fa-clock {
 	margin-top: 3px;
 }
 

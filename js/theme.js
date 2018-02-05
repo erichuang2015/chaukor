@@ -32,7 +32,11 @@ jQuery(document).ready(function () {
     stickyToggle(sticky, stickyWrapper, jQuery(window));
   });
 
-
+  jQuery('.js-btn').click(() => {
+    jQuery('html, body').animate({
+        scrollTop: jQuery('.js-section').offset().top
+    }, 200);
+});
 }
 );
 
