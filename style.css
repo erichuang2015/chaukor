@@ -197,6 +197,10 @@ header {
 	padding-top: 35px;
 }
 
+.admin-nav {
+	margin-top: 30px;
+}
+
 .navbar {
 	background-color: #BD0D25 !important;
 	padding:0;
