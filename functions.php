@@ -19,9 +19,8 @@ function chaukor_theme_scripts() {
 	wp_enqueue_script('jquery');
 	wp_enqueue_script( 'tether', '//cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js' );
 	wp_enqueue_style( 'bootstrap', '//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css' );
-	//wp_enqueue_script( 'font-awesome', '//use.fontawesome.com/releases/v5.0.12/css/all.css' );
-	wp_enqueue_style( 'slabo-27px', '//fonts.googleapis.com/css?family=Slabo+27px:400,700' );
-	wp_enqueue_style( 'raleway', '//fonts.googleapis.com/css?family=Raleway:300,400,700' );
+	wp_enqueue_script( 'font-awesome', 'https://use.fontawesome.com/releases/v5.0.12/js/all.js' );
+	wp_enqueue_style( 'karla', '//fonts.googleapis.com/css?family=Karla:400,700' );
 	wp_enqueue_script( 'bootstrapjs', '//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js', array('jquery') );
 	wp_enqueue_script( 'theme', get_stylesheet_directory_uri() . '/js/theme.js', array('jquery'));
 	wp_enqueue_style( 'core',  get_stylesheet_directory_uri(). '/style.css' );	
