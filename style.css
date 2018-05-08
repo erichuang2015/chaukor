@@ -335,6 +335,10 @@ header {
 	margin-left: auto;
 }
 
+.text-side img {
+    max-width: 100%;
+}
+
 .text-side::after {
     content: '';
     position: absolute;
