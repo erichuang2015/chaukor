@@ -12,7 +12,7 @@
           <div class="block-item">
           <div class="text-side col-md-6 col-lg-6">
                 <h1 title="<?php the_title_attribute(); ?>" class="main-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-                <p><?php the_excerpt(); ?></p>
+                <p><?php the_content(); ?></p>
             </div>            
             <div class="image-side col-md-6 col-lg-6 hidden-sm-down ">
                      <span class="postmeta"><p class="postdate">

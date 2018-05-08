@@ -34,7 +34,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 *****************************************/
 body {
   min-height: calc(100vh - 32px);
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Karla', sans-serif !important;
   background-color: #BD0D25 !important;
 }
 
@@ -318,7 +318,7 @@ header {
 
 .block-item-single {
 	flex-direction: column !important;
-	background-color: lightgray;
+	background-color: white;
 	padding-top: 50px !important;
 }
 
@@ -334,7 +334,6 @@ header {
 	padding-right: 35px;
 	background: white;
 	margin-left: auto;
-	border-left: 1px solid #ebebeb;
 }
 
 .text-side::after {
@@ -360,6 +359,7 @@ header {
     text-transform: uppercase;
 	font-weight: 600;
 	color: #474747;
+	margin-top: 5px;
 }
 
 .text-side-single {
