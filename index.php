@@ -17,7 +17,8 @@
             <div class="image-side col-md-6 col-lg-6 hidden-sm-down ">
                      <div class="postmeta"><p class="postdate">
                         <i class="far fa-clock"></i><time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'chaukor'); ?></time>
-                        <i class="fa fa-user" aria-hidden="true"></i><?php the_author_posts_link();?>
+                        <br />
+                        <i class="far fa-user"></i><?php the_author_meta('user_nicename');?>
                       </div>
             </div>
           </div>
