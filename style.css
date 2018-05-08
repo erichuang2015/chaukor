@@ -218,7 +218,7 @@ header {
 
 .sitedescription {
 	background-color: #BD0D25 !important;
-	padding: 75px;	
+	padding: 25px;	
 	text-align: center;
 	color: white;
 	font-weight: 300;
@@ -802,7 +802,6 @@ footer > .container > .text-center {
 	}
 
 	.sitedescription {
-		padding: 25px;
 		font-size: 1.1rem;
 	}
 	
