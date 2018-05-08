@@ -218,11 +218,11 @@ header {
 
 .sitedescription {
 	background-color: #BD0D25 !important;
-	padding: 25px;	
-	text-align: center;
+	padding: 15px;	
 	color: white;
 	font-weight: 300;
-	font-size: 25px;
+	font-size: 17px;
+	margin-left: 15px;
 }
 
 /* color of clickable header */
@@ -799,10 +799,6 @@ footer > .container > .text-center {
 
 	.navbar-brand {
 		font-size: 1.3rem;
-	}
-
-	.sitedescription {
-		font-size: 1.1rem;
 	}
 	
 	.block-item {
