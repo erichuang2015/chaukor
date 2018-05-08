@@ -362,6 +362,7 @@ header {
 	font-weight: 600;
 	color: #474747;
 	margin-top: 5px;
+	margin-bottom: 0;
 }
 
 .text-side-single {
@@ -657,7 +658,8 @@ ul.pings.commentlist {
 	text-decoration: underline;
 }
 
-.tagslist a::before {
+.tagslist a::before, 
+.postmeta p a::before {
     content: '#';
 }
 
@@ -665,6 +667,14 @@ ul.pings.commentlist {
 	margin-bottom: 35px;
 	padding-top: 35px;
 	margin-left: 10px;
+}
+
+.postmeta p a {
+	font-size: 1.35em;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #474747;
+	margin-top: 5px;
 }
 
 .tagslist a {
@@ -675,7 +685,8 @@ ul.pings.commentlist {
 	text-transform: uppercase;
 }
 
-.tagslist a:hover {
+.tagslist a:hover, 
+.postmeta p a:hover {
 	color: black;
 	text-decoration: underline;
 }
