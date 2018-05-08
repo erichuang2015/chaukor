@@ -314,7 +314,7 @@ header {
 	display: flex;
 	flex-direction: row;
 	height: auto;
-	background-color: #f8f8f8;
+	background-color: white;
 }
 
 .block-item-single {
@@ -334,6 +334,9 @@ header {
 	padding: 15px;
 	padding-right: 30px;
 	background: white;
+	max-width: 600px;
+	margin-left: auto;
+	border-left: 1px solid #ebebeb;
 }
 
 .text-side::after {
