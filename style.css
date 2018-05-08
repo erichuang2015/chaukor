@@ -43,7 +43,7 @@ body {
 }
 
 .container-fluid {
-	width: 100%;
+	background: white;
 }
 
 .h-slider {
@@ -302,12 +302,11 @@ header {
 
 *****************************************/
 
-.container-fluid {
-	padding: 0 !important;
-}
-
 .blocktainer {
-	padding: 0 !important;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	background: white;
 }
 
 .block-item {
@@ -332,9 +331,8 @@ header {
 	text-align: right;
 	flex-direction: column;
 	padding: 15px;
-	padding-right: 30px;
+	padding-right: 35px;
 	background: white;
-	max-width: 600px;
 	margin-left: auto;
 	border-left: 1px solid #ebebeb;
 }
