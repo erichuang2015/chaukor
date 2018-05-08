@@ -338,8 +338,8 @@ header {
     width: 30px;
     height: 30px;
     right: -17px;
-    background-color: #BD0D7C;
-    border: 5px solid #BD0D7C;
+    background-color: #4abdac;
+    border: 5px solid #4abdac;
     top: 25px;
     border-radius: 50%;
 	z-index: 1;
@@ -706,7 +706,6 @@ img.avatar {
 
 *****************************************/
 .pagination {
-    background-color: #fc4a1a;
     padding-top: 20px;
 }
 
@@ -724,6 +723,7 @@ img.avatar {
 	float: left;
 	list-style: none;
 	padding: 15px;
+	border: 1px solid #bf3a16;
 }
 
 .pagination > ul > li > a, 
@@ -759,7 +759,6 @@ footer {
 	height: 60px;
 	bottom: 0;
 	width: 100%;
-	background-color: #fc4a1a;
 }
 
 footer p {
