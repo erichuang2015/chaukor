@@ -15,9 +15,10 @@
                 <p><?php the_content(); ?></p>
             </div>            
             <div class="image-side col-md-6 col-lg-6 hidden-sm-down ">
-                     <span class="postmeta"><p class="postdate">
+                     <div class="postmeta"><p class="postdate">
                         <i class="far fa-clock"></i><time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'chaukor'); ?></time>
-                    </span>
+                        <i class="fa fa-user" aria-hidden="true"></i><?php the_author_posts_link();?>
+                      </div>
             </div>
           </div>
         <?php endwhile;
