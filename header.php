@@ -19,6 +19,13 @@
 
 <!-- start of the actual header -->
 <header>
+<?php 
+if ( get_bloginfo( 'description' ) ) : ?>
+    <div class="sitedescription">
+        <?php bloginfo( 'description' );?>
+    </div>
+<?php endif; ?>
+
 <nav class="navbar navbar-expand-md navbar-dark <?php if ( is_admin_bar_showing() ) { echo 'admin-nav'; } ?>" data-toggle="sticky-onscroll">
         <?php if ( function_exists( 'the_custom_logo' ) ) {  the_custom_logo(); }  ?>
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,12 +41,6 @@
     <?php bootstrap_nav(); ?>
   </div>
 </nav>
-<?php 
-if ( get_bloginfo( 'description' ) ) : ?>
-    <div class="sitedescription">
-        <?php bloginfo( 'description' );?>
-    </div>
-<?php endif; ?>
 
 </header>
 
