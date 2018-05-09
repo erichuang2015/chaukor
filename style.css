@@ -1198,7 +1198,8 @@ EXTERNAL libraries look-n-feel
 	color: #b23615;
 }
 
-.fa-clock {
+.fa-clock,
+.fa-list {
 	margin-top: 3px;
 }
 
