@@ -878,11 +878,13 @@ footer > .container > .text-center {
 	
 	.text-side {
 		padding-right: 5px;
+		overflow: hidden;
 	}
 
 	.main-title {
 		font-size: 25px;
 		margin-top: 10px;
+		margin-right: 10px;
 	}
 
 	img.brand-logo {
