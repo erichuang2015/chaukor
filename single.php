@@ -26,7 +26,7 @@
                     <?php if (get_theme_mod( 'show_categories' ) == 'showcategories' ) { ?>
                     <?php if(has_category()) { ?>
                     <p>
-                            <i class="fa fa-list" aria-hidden="true"></i></span>
+                            <i class="fas fa-list" aria-hidden="true"></i></span>
                             <?php $categories = get_the_category();
                                 $separator = ', ';
                                 $output = '';
