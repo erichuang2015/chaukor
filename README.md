@@ -11,6 +11,7 @@ Chaukor is a Wordpress theme based on your timeline. It shows your post history 
 - Custom ~~tag, category, author, search and error pages~~ (working on it). 
 - Custom **Chaukor Settings**
 - **Translation support** - includes English and Dutch languages
+- Jetpack's Infinite scroll support!
 
 # Chaukor Settings - theme specific custom options
 - Show tags in posts and such (show/hide)
