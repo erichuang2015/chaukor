@@ -279,24 +279,6 @@ header {
 
 /* **************************************
 
-  SLIDER LOOK-N-FEEL
-
-*****************************************/
-.carousel {
-	background-color: #fc4a1a;
-}
-
-.carousel-item {
-	object-fit: cover;
-	justify-content: center;
-}
-
-.carousel:hover {
-	filter: grayscale(30%);
-}
-
-/* **************************************
-
   HOME PAGE POSTS LOOK-N-FEEL
 
 *****************************************/
@@ -333,6 +315,7 @@ header {
 	padding-right: 35px;
 	background: white;
 	margin-left: auto;
+	border-right: 5px solid #BD0D25;
 }
 
 .text-side img {
@@ -372,7 +355,6 @@ header {
 .image-side {
 	display: flex;
 	padding:0;
-	border-left: 5px solid #BD0D25;
 	padding-top: 20px;
 	padding-left: 35px;
 }
@@ -536,7 +518,7 @@ POST/ARTICLE HEADERS
 	width: 100%;	
 }
 
-.carousel:hover, .archive-image:hover {
+.archive-image:hover {
 	filter: grayscale(25%) !important;
 }
 
@@ -839,8 +821,9 @@ footer > .container > .text-center {
 		padding-right: 5px;
 	}
 
-	.carousel-item {
-		height: 300px;
+	.main-title {
+		font-size: 25px;
+		margin-top: 10px;
 	}
 
 	img.brand-logo {
@@ -931,18 +914,23 @@ footer > .container > .text-center {
 	.comment-body > ul li > ol li > ul li {
 		line-height: 25px;
 	}
+
+	.pagination > .mx-auto {
+		margin-left: auto !important;
+		margin-right: 15px !important;
+	}
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) { 
 
-
 	.text-side {
-		padding-right: 5px;
+		padding-right: 20px;
 	}
 
-	.carousel-item {
-		height: 300px;
+	.main-title {
+		font-size: 25px;
+		margin-top: 10px;
 	}
 
 	img.brand-logo {
@@ -999,6 +987,11 @@ footer > .container > .text-center {
 	.comment-body > ul li > ol li > ul li {
 		line-height: 25px;
 	}
+
+	.pagination > .mx-auto {
+		margin-left: auto !important;
+		margin-right: 15px !important;
+	}
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -1008,10 +1001,10 @@ footer > .container > .text-center {
 		padding-right: 30px;
 	}
 
-	.carousel-item {
-		height: 300px;
+	.main-title {
+		font-size: 25px;
 	}
-
+	
 	.sidebar {
 		margin-bottom: 20px;
 	}
@@ -1076,10 +1069,6 @@ footer > .container > .text-center {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199px) { 
-
-	.carousel-item {
-		height: 400px;
-	}
 
 	.sidebar {
 		margin-bottom: 20px;
