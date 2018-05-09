@@ -298,7 +298,6 @@ header {
 }
 
 .block-item-single {
-	flex-direction: column !important;
 	background-color: white;
 	padding-top: 0 !important;
 }
@@ -316,10 +315,6 @@ header {
 	background: white;
 	margin-left: auto;
 	border-right: 5px solid #BD0D25;
-}
-
-.text-side-single {
-	text-align: left;
 }
 
 .text-side img {
@@ -354,7 +349,7 @@ header {
 }
 
 .text-side-single {
-	justify-content: initial !important; /* align horizontal */
+	
 }
 
 .image-side {
@@ -452,11 +447,49 @@ a {
 }
 
 .postmeta {
-	margin-left:0px;
+	background: #f8f8f8;
+	border: 1px solid #ebebeb;
+	padding: 10px;
+	width: 75%;
+}
+
+.postmeta::before {
+	content: ' ';
+	display: block;
+	position: absolute;
+	left: 28px;
+	width: 14px;
+	height: 14px;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	background: #f8f8f8;
+	border-left: 1px solid #ebebeb;
+	z-index: 99999;
+	border-bottom: 1px solid #ebebeb;
 }
 
 .postmeta-single {
-	margin-left:15px !important;
+	width: 100%;
+}
+
+.postmeta-single::before {
+	content: ' ';
+	display: block;
+	position: relative;
+	right: 28px;
+	top: 10px;
+	left: 100%;
+	margin-left: 3px;
+	width: 14px;
+	height: 14px;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	background: #f8f8f8;
+	border-right: 1px solid #ebebeb;
+	z-index: 99999;
+	border-top: 1px solid #ebebeb;
 }
 
 article > h1:not(:first-child), 
@@ -502,8 +535,6 @@ POST/ARTICLE HEADERS
 *****************************************/
 .wp-post-image {
 	object-fit: cover;
-	height: 400px;
-	width: 400px;
 }
 
 .badge-date {
@@ -699,12 +730,12 @@ ul.pings.commentlist {
 }
 
 .author-profile > .avatar {
-	float:left;
+	float:right;
 }
 
 img.avatar {
 	z-index:200;
-	margin-right:15px;
+	margin-left:15px;
 	margin-bottom: 10px;
 	margin-top: 10px;
 }
