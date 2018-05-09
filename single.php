@@ -27,14 +27,11 @@
                      <?php if ( get_theme_mod( 'show_author_section' ) == 'hideauthor' ) :?>
                     <p class="postdate"><i class="fa fa-user" aria-hidden="true"></i><?php the_author_posts_link();?></p>
                     <?php endif; ?>
-                    <?php if(has_tag()) { ?>
                         <?php if ( get_theme_mod( 'show_tags' ) == 'showtags' ) : ?>
                         <p class="tagslist">
                             <?php the_tags( '<i class="fas fa-tags" aria-hidden="true"></i>', ' ', ' ' ); ?> 
                             <?php endif; ?>
                         </p>
-                        <?php } ?>
-                    <?php if (get_theme_mod( 'show_categories' ) == 'showcategories' ) { ?>
                     <?php if(has_category()) { ?>
                     <p>
                             <i class="fas fa-list" aria-hidden="true"></i></span>
@@ -49,9 +46,7 @@
                                     echo trim( $output, $separator );
                             } ?>
                      </p>
-                            <?php 
-                                }
-                    } ?>
+                            <?php  }  ?>
                  </div><!-- close post-info -->            
             </span>
             <h1 title="<?php the_title_attribute(); ?>" class="main-title main-title-post"><?php the_title(); ?></h1>
