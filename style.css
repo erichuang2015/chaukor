@@ -52,7 +52,6 @@ body {
 }
 
 .h3-join-the-conversation {
-	margin-left: 30px;
 	margin-bottom: 30px;
 	border-bottom: 3px solid #BD0D25 !important;
 	padding-top: 20px;
@@ -393,7 +392,7 @@ header {
 }
 
 .main-title-post {
-	border-bottom: 3px solid #B21542;
+	border-bottom: 3px solid #1590B2;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -630,17 +629,17 @@ ul.pings.commentlist {
 }
 
 .pagination-within li { 
-    background-color: #fc4a1a;
+    background-color: #1590B2;
 	color:white;
 }
 
 .pagination-within > a > li {
-    background-color: #fc4a1a;
+    background-color: #b23615;
 	color:white;
 }
 
 .pagination-within > a > li:hover {
-	background-color: #4abdac;
+	background-color: #1590B2;
 	color: white;
 }
 
@@ -803,11 +802,11 @@ img.avatar {
 }
 
 .pagination > ul > li:hover {
-	background-color: #474747;
+	background-color: #1590B2;
 }
 
 .pagination > ul > li.active {
-	background-color: #474747;
+	background-color: #1590B2;
 }
 
 .pagination > ul > li.pagination-dash {
