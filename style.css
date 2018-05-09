@@ -346,7 +346,7 @@ header {
 	font-weight: 600;
 	color: #474747;
 	margin-top: 5px;
-	margin-bottom: 0;
+	margin-bottom: 10px;
 }
 
 .text-side-single {
@@ -690,8 +690,6 @@ ul.pings.commentlist {
 
 .tagslist {
 	margin-bottom: 35px;
-	padding-top: 35px;
-	margin-left: 10px;
 }
 
 .postmeta p a {

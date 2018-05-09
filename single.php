@@ -18,7 +18,7 @@
                     <?php endif; ?>
                     <?php if(has_tag()) { ?>
                         <?php if ( get_theme_mod( 'show_tags' ) == 'showtags' ) : ?>
-                        <p class="postdate">
+                        <p class="tagslist">
                             <?php the_tags( '<i class="fas fa-tags" aria-hidden="true"></i>', ' ', ' ' ); ?> 
                             <?php endif; ?>
                         </p>
