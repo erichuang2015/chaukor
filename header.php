@@ -44,4 +44,4 @@ if ( get_bloginfo( 'description' ) ) : ?>
 
 </header>
 
-<div class="container-fluid flex-grow">
+<div class="container-fluid flex-grow" style="background-image:url('<?php echo esc_url( get_template_directory_uri() ); ?>/images/bgpattern.png')">

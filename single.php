@@ -51,7 +51,6 @@
                     endif; ?>
 
                 <?php if( comments_open() ) { ?>
-                      <h3 class="h3-join-the-conversation"><?php _e('Join the conversation', 'chaukor'); ?></h3>
                 <!-- let user enter a comment -->
                 <?php comments_template(); ?>
                 <?php }
