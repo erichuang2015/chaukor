@@ -32,16 +32,18 @@ Use it to make something cool, have fun, and share what you've learned with othe
   GENERAL FONT / ELEMENT
 
 *****************************************/
+html body {
+	height: 100%;
+}
+
+
 body {
   font-family: 'Karla', sans-serif !important;
 }
 
-.flex-grow {
-   flex: 1;
-}
-
 .container-fluid {
 	background: white;
+	min-height: 100%;
 }
 
 
@@ -470,7 +472,6 @@ a {
 	-moz-transform: rotate(45deg);
 	background: #f8f8f8;
 	border-left: 1px solid #ebebeb;
-	z-index: 99999;
 	border-bottom: 1px solid #ebebeb;
 }
 
@@ -497,7 +498,6 @@ a {
 	-moz-transform: rotate(45deg);
 	background: #f8f8f8;
 	border-right: 1px solid #ebebeb;
-	z-index: 99999;
 	border-top: 1px solid #ebebeb;
 }
 
@@ -829,6 +829,7 @@ img.avatar {
 
 *****************************************/
 footer {
+	position: absolute;
 	height: 60px;
 	bottom: 0;
 	width: 100%;
