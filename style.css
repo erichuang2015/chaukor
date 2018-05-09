@@ -332,7 +332,7 @@ header {
 }
 
 .postdate {
-	font-size: 1.35em;
+	font-size: 1.15em;
     text-transform: uppercase;
 	font-weight: 600;
 	color: #1590B2;
@@ -696,7 +696,7 @@ ul.pings.commentlist {
 }
 
 .postmeta p a {
-	font-size: 1.35em;
+	font-size: 1.15em;
 	text-transform: uppercase;
 	font-weight: 600;
 	color: #1590B2;
