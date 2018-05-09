@@ -1308,8 +1308,9 @@ ul.children {
 }
 
 .comment-reply-link:hover, .form-submit > input#submit:hover{
-	 text-decoration: underline;
+	 text-decoration: none;
 	 color: white;
+	 background: #1590B2;
 }
 
 .form-submit > input#submit {
