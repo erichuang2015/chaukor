@@ -452,7 +452,7 @@ a {
 }
 
 .postmeta:hover {
-	transform: scale(1.05);
+	transform: scale(1.03);
 }
 
 .postmeta::before {
@@ -460,6 +460,7 @@ a {
 	display: block;
 	position: relative;
 	left: -32px;
+	top: 3px;
 	width: 14px;
 	height: 14px;
 	transform: rotate(45deg);
