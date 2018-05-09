@@ -251,7 +251,6 @@ header {
     position: absolute;
     padding: 40px;
     top: 50px;
-    font-family: 'Raleway';
     font-weight: 700;
     font-size: 1.5em;
 }
@@ -262,7 +261,6 @@ header {
     position: absolute;
     padding: 40px;
     top: 50px;
-    font-family: 'Raleway';
     font-weight: 700;
     font-size: 1.5em;
     right: 0;
@@ -374,11 +372,11 @@ header {
 
 .main-title {
 	font-size: 2em;
-	font-family: 'Raleway', serif;
 	font-weight: 700;
 	text-overflow: ellipsis;
 	overflow: hidden;
 	white-space: nowrap;
+	margin-bottom: 0;
 }
 
 .main-title-post {
