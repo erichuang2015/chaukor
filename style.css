@@ -196,6 +196,9 @@ header {
 .navbar {
 	background-color: #BD0D25 !important;
 	padding:0;
+	max-width: 1470px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .navbar-brand {
