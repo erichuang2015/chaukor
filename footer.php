@@ -1,5 +1,5 @@
 </div><!-- container END! -->
-<footer class="footer">
+<footer class="footer" id="footer">
       <div class="container">
         <p class="text-center">
             <?php  $getActiveTheme = wp_get_theme();?>

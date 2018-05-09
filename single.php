@@ -8,7 +8,6 @@
                     if ( has_post_thumbnail() ) {
                         the_post_thumbnail('full', ['class' => 'img-fluid', 'title' => 'Feature image']);
                     }
-
         ?>
         </div>
       <?php

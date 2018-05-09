@@ -16,13 +16,14 @@ if ( ! isset( $content_width ) ) {
 
 
 function chaukor_theme_scripts() {
-	wp_enqueue_script( 'tether', 'https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js' );
-	wp_enqueue_style( 'bootstrap', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.min.css' );
-	wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' );
-	wp_enqueue_style( 'open-sans', 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' );
-	wp_enqueue_style( 'core',  get_stylesheet_directory_uri(). '/style.css' );
-	wp_enqueue_script( 'bootstrapjs', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/js/bootstrap.min.js', array('jquery') );
+	wp_enqueue_script('jquery');
+	wp_enqueue_script( 'tether', '//cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js' );
+	wp_enqueue_style( 'bootstrap', '//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css' );
+	wp_enqueue_script( 'font-awesome', 'https://use.fontawesome.com/releases/v5.0.12/js/all.js' );
+	wp_enqueue_style( 'karla', '//fonts.googleapis.com/css?family=Karla:400,700' );
+	wp_enqueue_script( 'bootstrapjs', '//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js', array('jquery') );
 	wp_enqueue_script( 'theme', get_stylesheet_directory_uri() . '/js/theme.js', array('jquery'));
+	wp_enqueue_style( 'core',  get_stylesheet_directory_uri(). '/style.css' );	
 }
 
 add_action( 'wp_enqueue_scripts', 'chaukor_theme_scripts' );
@@ -34,6 +35,18 @@ $bgargs = array(
 add_theme_support( "title-tag" );
 add_theme_support( 'automatic-feed-links' );
 add_theme_support( "post-thumbnails" );
+
+
+add_theme_support( 'infinite-scroll', array(
+    'container' => 'blocktainer',
+	'footer' => 'footer',
+	'render' => 'render_function'
+) );
+
+function render_function() {
+    get_template_part('content');
+}
+
 
 
 /* register main navigation */
@@ -293,7 +306,6 @@ function chaukor_setup() {
 
 add_action( 'after_setup_theme', 'chaukor_setup' );
 add_filter( 'get_custom_logo', 'change_logo_class' );
-
 
 load_theme_textdomain( 'chaukor', get_template_directory().'/languages' );
 

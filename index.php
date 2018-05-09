@@ -1,69 +1,37 @@
 <?php 
   get_header(); 
 ?>
-<div class="blocktainer col-md-12 col-lg-12" >
- 
-<?php if ( !get_theme_mod( 'display_featured_content' ) == 'showslider') : ?>
- <div class="image-side hidden-sm-up col-sm-12">
-<?php  if ( has_post_thumbnail() ) {?>
-
- <?php the_post_thumbnail('full', ['class' => 'img-fluid', 'title' => 'Feature image']);?>
-          
- <?php } else { ?>		
-              <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title_attribute(); ?>" width="3840" class="d-block img-fluid wp-post-image" />		
-              <?php }  ?>
- </div>  
-  <?php  endif;  ?>
+<div class="blocktainer col-md-12 col-lg-12" id="blocktainer">
  
 <?php
-      $colorcounter = 0;
       if ( have_posts() ) : 
         while ( have_posts() ) : the_post(); ?>
-          <div class="block-item <?php if($colorcounter == 1) { echo 'even-color'; } else { echo 'uneven-color'; } ?>">
-            <div class="text-side col-sm-12 col-md-5 col-lg-6">
-                <h1 title="<?php the_title_attribute(); ?>" class="main-title"><?php the_title(); ?></h1>
+
+
+
+          <div class="block-item">
+          <div class="text-side col-md-6 col-lg-6">
+                <h1 title="<?php the_title_attribute(); ?>" class="main-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
                 <p><?php the_excerpt(); ?></p>
-                 <a class="btn btn-primary readmore-btn" href="<?php the_permalink(); ?>" role="button" title="<?php the_title_attribute(); ?>" ><?php _e('Read more', 'chaukor'); ?></a>
-                <span class="postmeta"><p class="postdate">
-                  <i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'chaukor'); ?></time>
-                <?php if (get_theme_mod( 'show_categories' ) == 'showcategories' ) { ?>
-                <?php if(has_category()) { ?>
-                <p class=><i class="fa fa-list" aria-hidden="true"></i>
-                <?php $categories = get_the_category();
-                    $separator = ', ';
-                    $output = '';
-                    if ( ! empty( $categories ) ) {
-                        foreach( $categories as $category ) {
-                            $output .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '">' 
-                            . esc_html( $category->name ) . '</a>' . $separator;
-                        }
-                        echo trim( $output, $separator );
-                    } ?>
-                </p>
-                </span>
-                <?php 
-                    }
-                } ?>
-                
-                </p>         
-                </div>            
-            <div class="image-side col-md-7 col-lg-6 hidden-sm-down ">
-              <?php
-              if ( has_post_thumbnail() ) {
-                  the_post_thumbnail('full', ['class' => 'img-fluid', 'title' => 'Feature image']);
-              }
-              else { ?>		
-              <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" alt="<?php the_title_attribute(); ?>" width="3840" class="d-block img-fluid wp-post-image" />		
-              <?php }  ?>
+            </div>            
+            <div class="image-side col-md-6 col-lg-6 hidden-sm-down ">
+                     <div class="postmeta"><p class="postdate">
+                        <i class="far fa-clock"></i><time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'chaukor'); ?></time>
+                        <br />
+                        <i class="far fa-user"></i><?php the_author_meta('user_nicename');?>
+                        <?php if(has_tag()) { ?>
+                        <?php if ( get_theme_mod( 'show_tags' ) == 'showtags' ) : ?>
+                        <p>
+                            <?php the_tags( '<i class="fas fa-tags" aria-hidden="true"></i>', ' ', ' ' ); ?> 
+                            <?php endif; ?>
+                        </p>
+                        <?php } ?>
+                      </div>
             </div>
           </div>
-          <?php $colorcounter++; 
-          if ($colorcounter == 3) {
-            $colorcounter = 1;
-          }
-
-?>
-          <?php endwhile; else: ?>
+        <?php endwhile;
+        
+        else: ?>
           <div class="post-content">
               <p><?php _e('Sorry, it seems there are no posts available.', 'chaukor'); ?></p>
               <?php get_search_form(); ?>
@@ -71,11 +39,9 @@
                 
       <?php endif; ?>
 
+</div> <!-- close content main -->
   <!-- navigation?-->
   <?php chaukor_pagination_numeric_posts_nav(); ?>
-
-</div> <!-- close content main -->
-
 </div> <!-- row main -->
 <!-- start of footer -->
 <?php get_footer(); ?>
