@@ -748,7 +748,7 @@ img.avatar {
 
 *****************************************/
 .pagination {
-    padding-top: 20px;
+
 }
 
 .pagination > .mx-auto {
@@ -765,7 +765,6 @@ img.avatar {
 	float: left;
 	list-style: none;
 	padding: 15px;
-	border: 1px solid #bf3a16;
 }
 
 .pagination > ul > li > a, 
@@ -774,11 +773,11 @@ img.avatar {
 }
 
 .pagination > ul > li:hover {
-	background-color: #4abdac;
+	background-color: #474747;
 }
 
 .pagination > ul > li.active {
-	background-color: #4abdac;
+	background-color: #474747;
 }
 
 .pagination > ul > li.pagination-dash {
