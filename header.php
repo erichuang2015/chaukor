@@ -15,7 +15,7 @@
     <?php wp_head();?>
 </head>
 
-<body class="d-flex flex-column" <?php body_class();?>>
+<body <?php body_class();?> style="background-image:url('<?php echo esc_url( get_template_directory_uri() ); ?>/images/bgpattern.png')">
 
 <!-- start of the actual header -->
 <header>
@@ -43,5 +43,5 @@ if ( get_bloginfo( 'description' ) ) : ?>
 </nav>
 
 </header>
-
-<div class="container-fluid flex-grow" style="background-image:url('<?php echo esc_url( get_template_directory_uri() ); ?>/images/bgpattern.png')">
+<main>
+<div class="container-fluid" style="background-image:url('<?php echo esc_url( get_template_directory_uri() ); ?>/images/bgpattern.png')">
