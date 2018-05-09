@@ -333,7 +333,6 @@ header {
     text-transform: uppercase;
 	font-weight: 600;
 	color: #1590B2;
-	margin-top: 12px;
 	margin-bottom: 0;
 }
 
@@ -449,6 +448,7 @@ a {
 	border: 1px solid #ebebeb;
 	padding: 10px;
 	padding-left: 25px;
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.2);
 }
 
 .postmeta:hover {
@@ -778,6 +778,7 @@ img.avatar {
 
 .pagination > .mx-auto {
 	padding-left: 0;
+	margin-bottom: 0;
 }
 
 .pagination > .active {
