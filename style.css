@@ -44,16 +44,6 @@ body {
 	background: white;
 }
 
-.h-slider {
-	color: white;
-	text-shadow: 2px 1px #000000;
-}
-
-.h3-join-the-conversation {
-	margin-bottom: 30px;
-	border-bottom: 3px solid #BD0D25 !important;
-	padding-top: 20px;
-}
 
 .container-fluid a {
 	color: black;
@@ -286,18 +276,15 @@ header {
 	max-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
-	background: white;
 }
 
 .block-item {
 	display: flex;
 	flex-direction: row;
 	height: auto;
-	background-color: white;
 }
 
 .block-item-single {
-	background-color: white;
 	padding-top: 0 !important;
 }
 
@@ -313,6 +300,7 @@ header {
 	padding-right: 35px;
 	background: white;
 	margin-left: auto;
+	border-left: 1px solid #ebebeb;
 	border-right: 3px solid #BD0D25;
 }
 
@@ -343,7 +331,7 @@ header {
     text-transform: uppercase;
 	font-weight: 600;
 	color: #1590B2;
-	margin-top: 5px;
+	margin-top: 12px;
 	margin-bottom: 0;
 }
 
@@ -458,6 +446,10 @@ a {
 	width: 75%;
 }
 
+.postmeta:hover {
+	transform: scale(1.05);
+}
+
 .postmeta::before {
 	content: ' ';
 	display: block;
@@ -476,6 +468,10 @@ a {
 
 .postmeta-single {
 	width: 100%;
+}
+
+.postmeta-single:hover {
+    transform: scale(1);
 }
 
 .postmeta-single::before {
@@ -1234,7 +1230,7 @@ ul.commentlist {
 .comment-respond,
 .entry-pings,
 .comment-body {
-    padding: 15px;
+    padding: 10px;
     overflow: hidden;
 }
 
@@ -1324,10 +1320,10 @@ ul.children {
     font-size: 80% !important;
     float: right;
 	cursor: pointer;
-    background-color:#979797;
+    background-color:#b23615;
     border: none;
     border-radius: 3px;
-    padding: 5px;
+    padding: 10px;
     text-transform: uppercase;
     width: auto;
 	color:white;
@@ -1343,9 +1339,7 @@ ul.children {
 }
 
 .reply {
-    float: right;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	padding-bottom: 20px;
 }
 
 .reply > a {
