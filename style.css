@@ -300,7 +300,7 @@ header {
 .block-item-single {
 	flex-direction: column !important;
 	background-color: white;
-	padding-top: 50px !important;
+	padding-top: 0 !important;
 }
 
 .text-side {
@@ -316,6 +316,10 @@ header {
 	background: white;
 	margin-left: auto;
 	border-right: 5px solid #BD0D25;
+}
+
+.text-side-single {
+	text-align: left;
 }
 
 .text-side img {
