@@ -134,7 +134,11 @@ select  {
   display:block;
   width:100%;
   border:none;
-  border-bottom: 3px solid #1590B2;
+  border-bottom: 1px solid #1590B2;
+}
+
+input:focus {
+	border-bottom: 3px solid #1590B2;
 }
 
 address {
@@ -1249,7 +1253,7 @@ ul.commentlist {
 }
 
 .comment.odd {
-	background-color: #a8ede2;
+	background-color: #f8f8f8;
 }
 
 ul.children {
@@ -1314,6 +1318,10 @@ ul.children {
 
 .comment-form-comment > textarea {
 	width: 100%;
+	border: 1px solid #1590B2;
+}
+
+.comment-form-comment > textarea:focus {
 	border: 3px solid #1590B2;
 }
 
