@@ -19,13 +19,11 @@
                         <i class="far fa-clock"></i><time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'chaukor'); ?></time>
                         <br />
                         <i class="far fa-user"></i><?php the_author_meta('user_nicename');?>
-                        <?php if(has_tag()) { ?>
                         <?php if ( get_theme_mod( 'show_tags' ) == 'showtags' ) : ?>
                         <p class="tagslist">
                             <?php the_tags( '<i class="fas fa-tags" aria-hidden="true"></i>', ' ', ' ' ); ?> 
                             <?php endif; ?>
                         </p>
-                        <?php } ?>
                       </div>
             </div>
           </div>
