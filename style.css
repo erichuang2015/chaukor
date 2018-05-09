@@ -634,7 +634,7 @@ ul.pings.commentlist {
 }
 
 .pagination-within > a > li {
-    background-color: #b23615;
+    background-color: #BD0D25;
 	color:white;
 }
 
@@ -789,7 +789,7 @@ img.avatar {
 }
 
 .pagination > ul > li {
-	background-color: #b23615;
+	background-color: #BD0D25;
 	float: left;
 	list-style: none;
 	padding: 15px;
