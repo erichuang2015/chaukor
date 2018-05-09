@@ -38,10 +38,10 @@
           </div><!-- post-content END! -->
                 
       <?php endif; ?>
-
-</div> <!-- close content main -->
   <!-- navigation?-->
   <?php chaukor_pagination_numeric_posts_nav(); ?>
+</div> <!-- close content main -->
+
 </div> <!-- row main -->
 <!-- start of footer -->
 <?php get_footer(); ?>

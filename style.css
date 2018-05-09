@@ -779,7 +779,7 @@ img.avatar {
 
 *****************************************/
 .pagination {
-
+	background: #BD0D25;
 }
 
 .pagination > .mx-auto {
@@ -797,6 +797,8 @@ img.avatar {
 	float: left;
 	list-style: none;
 	padding: 15px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .pagination > ul > li > a, 
@@ -823,6 +825,10 @@ img.avatar {
     background: #f8f8f8;
 }
 
+.pagination .container .text-center {
+	margin-bottom: 0 !important;
+}
+
 /* **************************************
 
   FOOTER
@@ -835,12 +841,12 @@ footer {
 }
 
 footer .container {
-	max-width: 1500px !important;
-	padding: 0 !important;
+	margin-top: 20px;
+	border-top: 1px solid #ebebeb;
 }
 
 footer p a {
-	color: white;
+	color: #474747;
 }
 
 footer p a:hover {
@@ -848,8 +854,7 @@ footer p a:hover {
 }
 
 footer > .container > .text-center {
-	color: white;
-	background: #BD0D25;
+	color: #474747;
 	padding: 20px;
 }
 
@@ -973,10 +978,6 @@ footer > .container > .text-center {
 		line-height: 25px;
 	}
 
-	.pagination > .mx-auto {
-		margin-left: auto !important;
-		margin-right: 15px !important;
-	}
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -1039,11 +1040,6 @@ footer > .container > .text-center {
 	.comment-body > ul li > ol li,
 	.comment-body > ul li > ol li > ul li {
 		line-height: 25px;
-	}
-
-	.pagination > .mx-auto {
-		margin-left: auto !important;
-		margin-right: 15px !important;
 	}
 }
 
