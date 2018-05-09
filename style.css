@@ -835,10 +835,6 @@ footer > .container > .text-center {
 		font-size: 1.3rem;
 	}
 	
-	.block-item {
-		padding: 5px;
-	}
-
 	.text-side {
 		padding-right: 5px;
 	}
@@ -940,9 +936,6 @@ footer > .container > .text-center {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) { 
 
-	.block-item {
-		padding: 5px;
-	}
 
 	.text-side {
 		padding-right: 5px;
@@ -1010,10 +1003,6 @@ footer > .container > .text-center {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
-
-	.block-item {
-		padding: 30px;
-	}
 
 	.text-side {
 		padding-right: 30px;
@@ -1087,10 +1076,6 @@ footer > .container > .text-center {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199px) { 
-
-	.block-item {
-		padding: 30px;
-	}
 
 	.carousel-item {
 		height: 400px;
