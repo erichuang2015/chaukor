@@ -3,7 +3,7 @@
 ?>
 
   <div class="blocktainer col-md-12 col-lg-12" >
-        <div class="image-side col-sm-12">
+        <div class="image-side col-sm-12 d-none d-sm-none d-sm-none d-lg-none">
         <?php
                     if ( has_post_thumbnail() ) {
                         the_post_thumbnail('full', ['class' => 'img-fluid', 'title' => 'Feature image']);
@@ -26,7 +26,7 @@
             </div>            
 
             <span class="postmeta postmeta-single">
-                <p><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'chaukor'); ?></time></p>
+                <p><i class="far fa-clock"></i><time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'chaukor'); ?></time></p>
                 <div class="post-info">
                      <?php if ( get_theme_mod( 'show_author_section' ) == 'hideauthor' ) :?>
                     <p><i class="fa fa-user" aria-hidden="true"></i><?php the_author_posts_link();?></p>
