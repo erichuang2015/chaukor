@@ -7,7 +7,7 @@ Description: Chaukor brings your timeline to you!
 Version: 1.0.0b1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: one-column custom-menu, custom-logo, featured-images, sticky-post, theme-options, threaded-comments, translation-ready
+Tags: one-column, custom-menu, custom-logo, featured-images, sticky-post, theme-options, threaded-comments, translation-ready
 Text Domain: chaukor
 
 This theme, like WordPress, is licensed under the GPL.
@@ -700,6 +700,7 @@ ul.pings.commentlist {
 	margin-top: 5px;
 	margin-right: 3px;
 	padding: 0;
+	text-decoration: none;
 }
 
 .tagslist a {
@@ -713,7 +714,7 @@ ul.pings.commentlist {
 .tagslist a:hover, 
 .postmeta p a:hover {
 	color: black;
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 /* **************************************
