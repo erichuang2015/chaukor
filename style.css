@@ -1230,6 +1230,7 @@ ul.commentlist {
 .comment-respond,
 .entry-pings,
 .comment-body {
+	margin-top: 15px;
     padding: 10px;
     overflow: hidden;
 }
