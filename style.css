@@ -1184,8 +1184,8 @@ footer > .container > .text-center {
 
 *****************************************/
 .error {
-	background-color: orangered;
-	color: white;
+	color: black;
+	border-bottom: 5px solid #474747;
 }
 
 /* **************************************
