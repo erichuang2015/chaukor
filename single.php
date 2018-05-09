@@ -43,7 +43,7 @@
                     } ?>
                  </div><!-- close post-info -->            
             </span>
-            <h1 title="<?php the_title_attribute(); ?>" class="main-title"><?php the_title(); ?></h1>
+            <h1 title="<?php the_title_attribute(); ?>" class="main-title main-title-post"><?php the_title(); ?></h1>
             <p><?php the_content(); ?></p>
                  <?php wp_link_pages('before=<ul class="pagination pagination-within center-align" role="navigation">&link_before=<li>&link_after=</li>&after=</ul>'); ?>
                      <?php if ( get_theme_mod( 'show_author_section' ) == 'showauthor' ) :
