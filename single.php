@@ -3,41 +3,26 @@
 ?>
 
   <div class="blocktainer col-md-12 col-lg-12" >
-        <div class="image-side col-sm-12 d-none d-sm-none d-sm-none d-lg-none">
-        <?php
-                    if ( has_post_thumbnail() ) {
-                        the_post_thumbnail('full', ['class' => 'img-fluid', 'title' => 'Feature image']);
-                    }
-        ?>
-        </div>
-      <?php
-      if ( have_posts() ) : 
+<?php      if ( have_posts() ) : 
         while ( have_posts() ) : the_post(); ?>
      <div <?php post_class(); ?>>
         <article>
         <div class="block-item block-item-single">
-            <div class="text-side text-side-single col-sm-12 col-md-12 col-lg-12">
-            <h1 title="<?php the_title_attribute(); ?>" class="main-title"><?php the_title(); ?></h1>
-            <p><?php the_content(); ?></p>
-                 <?php wp_link_pages('before=<ul class="pagination pagination-within center-align" role="navigation">&link_before=<li>&link_after=</li>&after=</ul>'); ?>
-                     <?php if ( get_theme_mod( 'show_author_section' ) == 'showauthor' ) :
-                        get_template_part( 'partials/authorsection' ); 
-                    endif; ?>
-            </div>            
-
+     
+            <div class="text-side text-side-single col-sm-12 col-md-6 col-lg-6">
             <span class="postmeta postmeta-single">
-                <p><i class="far fa-clock"></i><time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'chaukor'); ?></time></p>
+                <p class="postdate"><i class="far fa-clock"></i><time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'chaukor'); ?></time></p>
                 <div class="post-info">
                      <?php if ( get_theme_mod( 'show_author_section' ) == 'hideauthor' ) :?>
-                    <p><i class="fa fa-user" aria-hidden="true"></i><?php the_author_posts_link();?></p>
+                    <p class="postdate"><i class="fa fa-user" aria-hidden="true"></i><?php the_author_posts_link();?></p>
                     <?php endif; ?>
                     <?php if(has_tag()) { ?>
                         <?php if ( get_theme_mod( 'show_tags' ) == 'showtags' ) : ?>
-                        <p>
-                            <?php the_tags( '<i class="fa fa-tags" aria-hidden="true"></i>', ', ', ' ' ); ?> 
+                        <p class="postdate">
+                            <?php the_tags( '<i class="fas fa-tags" aria-hidden="true"></i>', ' ', ' ' ); ?> 
                             <?php endif; ?>
                         </p>
-                    <?php } ?>
+                        <?php } ?>
                     <?php if (get_theme_mod( 'show_categories' ) == 'showcategories' ) { ?>
                     <?php if(has_category()) { ?>
                     <p>
@@ -58,8 +43,22 @@
                     } ?>
                  </div><!-- close post-info -->            
             </span>
-            
-            </div><!-- close image-side -->
+            <h1 title="<?php the_title_attribute(); ?>" class="main-title"><?php the_title(); ?></h1>
+            <p><?php the_content(); ?></p>
+                 <?php wp_link_pages('before=<ul class="pagination pagination-within center-align" role="navigation">&link_before=<li>&link_after=</li>&after=</ul>'); ?>
+                     <?php if ( get_theme_mod( 'show_author_section' ) == 'showauthor' ) :
+                        get_template_part( 'partials/authorsection' ); 
+                    endif; ?>
+            </div>            
+            <div class="image-side col-sm-12 col-md-6 col-lg-6">
+              <?php
+                          if ( has_post_thumbnail() ) {
+                              the_post_thumbnail('full', ['class' => 'img-fluid', 'title' => 'Feature image']);
+                          }
+              ?>
+              </div>
+
+            </div><!-- close block item -->
        </article><!-- close article -->
       <?php if( comments_open() ) { ?>
 	          <h3 class="h3-join-the-conversation"><?php _e('Join the conversation', 'chaukor'); ?></h3>
