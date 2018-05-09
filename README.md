@@ -32,6 +32,6 @@ Chaukor is a Wordpress theme based on your timeline. It shows your post history 
 - Google Chrome  59.0.3071.115 (stable)
 - Firefox 59.0
 
-### Mobile (Android)
-- Google Chrome
+### Mobile (iOS)
+- Safari
 - Firefox
