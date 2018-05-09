@@ -3,11 +3,11 @@ Theme Name: Chaukor
 Theme URI: 
 Author: Michael Boumann
 Author URI: http://www.michaelboumann.info
-Description: Boxy theme made for mobile but works great for desktop.
+Description: Chaukor brings your timeline to you!
 Version: 1.0.0b1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: one-column custom-menu, custom-logo, featured-images, sticky-post, theme-options, threaded-comments, translation-ready
+Tags: one-column, custom-menu, custom-logo, featured-images, sticky-post, theme-options, threaded-comments, translation-ready
 Text Domain: chaukor
 
 This theme, like WordPress, is licensed under the GPL.
@@ -32,18 +32,18 @@ Use it to make something cool, have fun, and share what you've learned with othe
   GENERAL FONT / ELEMENT
 
 *****************************************/
+html body {
+	height: 100%;
+}
+
 body {
   font-family: 'Karla', sans-serif !important;
 }
 
-.flex-grow {
-   flex: 1;
-}
-
 .container-fluid {
 	background: white;
+	min-height: 100%;
 }
-
 
 .container-fluid a {
 	color: black;
@@ -196,6 +196,9 @@ header {
 .navbar {
 	background-color: #BD0D25 !important;
 	padding:0;
+	max-width: 1470px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .navbar-brand {
@@ -251,7 +254,6 @@ header {
     position: absolute;
     padding: 40px;
     top: 50px;
-    font-family: 'Raleway';
     font-weight: 700;
     font-size: 1.5em;
 }
@@ -262,7 +264,6 @@ header {
     position: absolute;
     padding: 40px;
     top: 50px;
-    font-family: 'Raleway';
     font-weight: 700;
     font-size: 1.5em;
     right: 0;
@@ -277,7 +278,7 @@ header {
 *****************************************/
 
 .blocktainer {
-	max-width: 1200px;
+	max-width: 1500px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -335,7 +336,6 @@ header {
     text-transform: uppercase;
 	font-weight: 600;
 	color: #1590B2;
-	margin-top: 12px;
 	margin-bottom: 0;
 }
 
@@ -345,9 +345,12 @@ header {
 
 .image-side {
 	display: flex;
-	padding:0;
-	padding-top: 20px;
-	padding-left: 35px;
+	padding-left: 30px;
+	padding-top: 17px;
+}
+
+.image-side-single {
+	padding: 0;
 }
 
 .even-color > .text-side,
@@ -374,11 +377,11 @@ header {
 
 .main-title {
 	font-size: 2em;
-	font-family: 'Raleway', serif;
 	font-weight: 700;
 	text-overflow: ellipsis;
 	overflow: hidden;
 	white-space: nowrap;
+	margin-bottom: 0;
 }
 
 .main-title-post {
@@ -392,6 +395,10 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 a {
 	color: #b23615 !important;
+}
+
+h1 a:hover {
+	color: #474747 !important;
 }
 
 a {
@@ -447,18 +454,19 @@ a {
 	border: 1px solid #ebebeb;
 	padding: 10px;
 	padding-left: 25px;
-	width: 75%;
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.2);
 }
 
 .postmeta:hover {
-	transform: scale(1.05);
+	transform: scale(1.03);
 }
 
 .postmeta::before {
 	content: ' ';
 	display: block;
-	position: absolute;
-	left: 28px;
+	position: relative;
+	left: -32px;
+	top: 3px;
 	width: 14px;
 	height: 14px;
 	transform: rotate(45deg);
@@ -466,7 +474,6 @@ a {
 	-moz-transform: rotate(45deg);
 	background: #f8f8f8;
 	border-left: 1px solid #ebebeb;
-	z-index: 99999;
 	border-bottom: 1px solid #ebebeb;
 }
 
@@ -493,7 +500,6 @@ a {
 	-moz-transform: rotate(45deg);
 	background: #f8f8f8;
 	border-right: 1px solid #ebebeb;
-	z-index: 99999;
 	border-top: 1px solid #ebebeb;
 }
 
@@ -540,8 +546,6 @@ POST/ARTICLE HEADERS
 *****************************************/
 .wp-post-image {
 	object-fit: cover;
-	padding-top: 30px;
-	padding-bottom: 30px;
 }
 
 .badge-date {
@@ -671,7 +675,7 @@ ul.pings.commentlist {
 
 .cat-links > a:hover {
 	text-decoration: underline;
-	color: #979797;
+	color: #474747;
 }
 
 .categorylist {
@@ -683,8 +687,7 @@ ul.pings.commentlist {
 	text-decoration: underline;
 }
 
-.tagslist a::before, 
-.postmeta p a::before {
+.tagslist a::before {
     content: '#';
 }
 
@@ -700,6 +703,7 @@ ul.pings.commentlist {
 	margin-top: 5px;
 	margin-right: 3px;
 	padding: 0;
+	text-decoration: none;
 }
 
 .tagslist a {
@@ -712,8 +716,8 @@ ul.pings.commentlist {
 
 .tagslist a:hover, 
 .postmeta p a:hover {
-	color: black;
-	text-decoration: underline;
+	color: #474747;
+	text-decoration: none;
 }
 
 /* **************************************
@@ -722,8 +726,7 @@ ul.pings.commentlist {
 
 *****************************************/
 .author-profile {
-	clear:both;
-	margin-top: 25px;
+
 }
 
 .author-bio {
@@ -776,11 +779,12 @@ img.avatar {
 
 *****************************************/
 .pagination {
-
+	background: #BD0D25;
 }
 
 .pagination > .mx-auto {
 	padding-left: 0;
+	margin-bottom: 0;
 }
 
 .pagination > .active {
@@ -793,6 +797,8 @@ img.avatar {
 	float: left;
 	list-style: none;
 	padding: 15px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .pagination > ul > li > a, 
@@ -819,6 +825,10 @@ img.avatar {
     background: #f8f8f8;
 }
 
+.pagination .container .text-center {
+	margin-bottom: 0 !important;
+}
+
 /* **************************************
 
   FOOTER
@@ -828,24 +838,23 @@ footer {
 	height: 60px;
 	bottom: 0;
 	width: 100%;
-	background: #BD0D25;
 }
 
-footer p {
-	padding-top: 25px;
+footer .container {
+	margin-top: 20px;
 }
 
 footer p a {
-	color: white;
+	color: #474747;
 }
 
 footer p a:hover {
-	color: black;
+	color: #474747;
 }
 
 footer > .container > .text-center {
-	margin-bottom: 0;
-	color: white;
+	color: #474747;
+	padding: 20px;
 }
 
 /* **************************************
@@ -855,6 +864,14 @@ footer > .container > .text-center {
 *****************************************/
 
 @media (max-width: 575px) {  
+	.container-fluid {
+		padding: 0 !important;
+	}
+
+	.blocktainer {
+		padding: 0 !important;
+	}
+
 	header {
 		padding-top: 0;
 	}
@@ -865,11 +882,13 @@ footer > .container > .text-center {
 	
 	.text-side {
 		padding-right: 5px;
+		overflow: hidden;
 	}
 
 	.main-title {
 		font-size: 25px;
 		margin-top: 10px;
+		margin-right: 10px;
 	}
 
 	img.brand-logo {
@@ -958,10 +977,6 @@ footer > .container > .text-center {
 		line-height: 25px;
 	}
 
-	.pagination > .mx-auto {
-		margin-left: auto !important;
-		margin-right: 15px !important;
-	}
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -1024,11 +1039,6 @@ footer > .container > .text-center {
 	.comment-body > ul li > ol li,
 	.comment-body > ul li > ol li > ul li {
 		line-height: 25px;
-	}
-
-	.pagination > .mx-auto {
-		margin-left: auto !important;
-		margin-right: 15px !important;
 	}
 }
 
@@ -1194,8 +1204,14 @@ EXTERNAL libraries look-n-feel
 	color: #b23615;
 }
 
-.fa-clock {
+.fa-clock,
+.fa-list {
 	margin-top: 3px;
+}
+
+.fa-list, 
+.fa-tags {
+	margin-left: 3px;
 }
 
 .fa-user {

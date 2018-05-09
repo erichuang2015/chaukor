@@ -8,25 +8,33 @@
      <div <?php post_class(); ?>>
         <article>
         <div class="block-item block-item-single">
-     
-            <div class="text-side text-side-single col-sm-12 col-md-6 col-lg-6">
+
+
+            <div class="text-side text-side-single col-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="d-block d-sm-block d-md-none d-lg-none">
+            <?php
+                          if ( has_post_thumbnail() ) {
+                              the_post_thumbnail('full', ['class' => 'img-fluid', 'title' => 'Feature image']);
+                          }
+                          else { ?>
+                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" class="img-fluid" />
+                        <?php  }
+              ?>
+              </div>
             <span class="postmeta postmeta-single">
                 <p class="postdate"><i class="far fa-clock"></i><time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'chaukor'); ?></time></p>
                 <div class="post-info">
                      <?php if ( get_theme_mod( 'show_author_section' ) == 'hideauthor' ) :?>
                     <p class="postdate"><i class="fa fa-user" aria-hidden="true"></i><?php the_author_posts_link();?></p>
                     <?php endif; ?>
-                    <?php if(has_tag()) { ?>
                         <?php if ( get_theme_mod( 'show_tags' ) == 'showtags' ) : ?>
                         <p class="tagslist">
                             <?php the_tags( '<i class="fas fa-tags" aria-hidden="true"></i>', ' ', ' ' ); ?> 
                             <?php endif; ?>
                         </p>
-                        <?php } ?>
-                    <?php if (get_theme_mod( 'show_categories' ) == 'showcategories' ) { ?>
                     <?php if(has_category()) { ?>
                     <p>
-                            <i class="fa fa-list" aria-hidden="true"></i></span>
+                            <i class="fas fa-list" aria-hidden="true"></i></span>
                             <?php $categories = get_the_category();
                                 $separator = ', ';
                                 $output = '';
@@ -38,9 +46,7 @@
                                     echo trim( $output, $separator );
                             } ?>
                      </p>
-                            <?php 
-                                }
-                    } ?>
+                            <?php  }  ?>
                  </div><!-- close post-info -->            
             </span>
             <h1 title="<?php the_title_attribute(); ?>" class="main-title main-title-post"><?php the_title(); ?></h1>
@@ -56,11 +62,14 @@
                 <?php }
                         ?>
             </div>            
-            <div class="image-side col-sm-12 col-md-6 col-lg-6">
+            <div class="image-side image-side-single d-none d-sm-flex d-md-flex d-lg-flex col-md-6 col-lg-6">
               <?php
                           if ( has_post_thumbnail() ) {
                               the_post_thumbnail('full', ['class' => 'img-fluid', 'title' => 'Feature image']);
                           }
+                          else { ?>
+                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/no-pic-available.jpg" class="img-fluid wp-post-image" />
+                        <?php  }
               ?>
               </div>
 
