@@ -544,7 +544,6 @@ POST/ARTICLE HEADERS
 *****************************************/
 .wp-post-image {
 	object-fit: cover;
-	padding-top: 30px;
 	padding-bottom: 30px;
 }
 
