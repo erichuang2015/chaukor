@@ -36,7 +36,6 @@ html body {
 	height: 100%;
 }
 
-
 body {
   font-family: 'Karla', sans-serif !important;
 }
@@ -45,7 +44,6 @@ body {
 	background: white;
 	min-height: 100%;
 }
-
 
 .container-fluid a {
 	color: black;
@@ -686,8 +684,7 @@ ul.pings.commentlist {
 	text-decoration: underline;
 }
 
-.tagslist a::before, 
-.postmeta p a::before {
+.tagslist a::before {
     content: '#';
 }
 
@@ -829,7 +826,6 @@ img.avatar {
 
 *****************************************/
 footer {
-	position: absolute;
 	height: 60px;
 	bottom: 0;
 	width: 100%;

@@ -21,7 +21,7 @@
                         <i class="far fa-user"></i><?php the_author_meta('user_nicename');?>
                         <?php if(has_tag()) { ?>
                         <?php if ( get_theme_mod( 'show_tags' ) == 'showtags' ) : ?>
-                        <p>
+                        <p class="tagslist">
                             <?php the_tags( '<i class="fas fa-tags" aria-hidden="true"></i>', ' ', ' ' ); ?> 
                             <?php endif; ?>
                         </p>
