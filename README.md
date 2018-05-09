@@ -9,13 +9,12 @@ Chaukor is a Wordpress theme based on your timeline. It shows your post history 
 - Set a custom site icon (favicon) and navbar logo
 - **Single Column** design
 - Custom ~~tag, category, author, search and error pages~~ (working on it). 
+- Color presets (working on it)
 - Custom **Chaukor Settings**
 - **Translation support** - includes English and Dutch languages
 - Jetpack's Infinite scroll support!
 
 # Chaukor Settings - theme specific custom options
-- Show tags in posts and such (show/hide)
-- Show categories in posts and such (show/hide)
 - Show author section (show/hide)
 
 ![Chaukor](https://github.com/boumannm/Chaukor/blob/master/screenshot.png)
