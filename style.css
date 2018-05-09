@@ -33,9 +33,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 *****************************************/
 body {
-  min-height: calc(100vh - 32px);
   font-family: 'Karla', sans-serif !important;
-  background-color: #BD0D25 !important;
 }
 
 .flex-grow {
@@ -90,7 +88,7 @@ blockquote {
 	margin-top: 25px;
 	margin-bottom: 25px;
 	background-color: whitesmoke;
-	border: 1px solid #fc4a1a;
+	border: 2px solid #ebebeb;
 	width: auto;
 }
 
@@ -146,7 +144,7 @@ select  {
   display:block;
   width:100%;
   border:none;
-  border-bottom:1px solid #ebebeb;
+  border-bottom: 3px solid #1590B2;
 }
 
 address {
@@ -344,9 +342,9 @@ header {
 	font-size: 1.35em;
     text-transform: uppercase;
 	font-weight: 600;
-	color: #474747;
+	color: #1590B2;
 	margin-top: 5px;
-	margin-bottom: 10px;
+	margin-bottom: 0;
 }
 
 .text-side-single {
@@ -383,7 +381,7 @@ header {
 }
 
 .main-title {
-	font-size: 40px;
+	font-size: 2em;
 	font-family: 'Raleway', serif;
 	font-weight: 700;
 	text-overflow: ellipsis;
@@ -393,6 +391,7 @@ header {
 
 .main-title-post {
 	border-bottom: 3px solid #1590B2;
+	margin-top: 35px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -455,6 +454,7 @@ a {
 	background: #f8f8f8;
 	border: 1px solid #ebebeb;
 	padding: 10px;
+	padding-left: 25px;
 	width: 75%;
 }
 
@@ -689,16 +689,17 @@ ul.pings.commentlist {
 }
 
 .tagslist {
-	margin-bottom: 35px;
+	margin-bottom: 0;
 }
 
 .postmeta p a {
 	font-size: 1.35em;
 	text-transform: uppercase;
 	font-weight: 600;
-	color: #474747;
+	color: #1590B2;
 	margin-top: 5px;
 	margin-right: 3px;
+	padding: 0;
 }
 
 .tagslist a {
@@ -882,9 +883,6 @@ footer > .container > .text-center {
 		font-size: 1.7rem !important;
 	}
 
-	.comment-meta {
-		justify-content: center !important;
-	}
 
 	.wp-caption {
 		margin-left: auto !important;
@@ -1008,11 +1006,6 @@ footer > .container > .text-center {
    		margin-top: 15px;
    	 	margin-bottom: 20px;
    	 	margin-left: 20px;
-	}
-
-	.tagslist, 
-	.categorylist {
-		margin-left: 2px;
 	}
 
 	.post-content > ul li, 
@@ -1194,9 +1187,10 @@ EXTERNAL libraries look-n-feel
 *****************************************/
 .fa-list,
 .fa-tags,
-.fa-clock {
+.fa-clock,
+.fa-user {
 	margin-right: 10px;
-	color: #474747;
+	color: #b23615;
 }
 
 .fa-clock {
@@ -1213,7 +1207,7 @@ EXTERNAL libraries look-n-feel
 
 *****************************************/
 .comments-wrapper {
-	padding: 30px;
+	
 }
 
 ul.commentlist {
@@ -1241,7 +1235,6 @@ ul.commentlist {
 .comment-body {
     padding: 15px;
     overflow: hidden;
-	border: 1px solid #ebebeb;
 }
 
 .comment-body > ul li,
@@ -1291,12 +1284,9 @@ ul.children {
 }
 
 .comment-meta {
-    padding: 5px;
-	margin-top: 5px;
-	margin-bottom: 15px;
-	display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+	float: right;
+	top: -45px;
+	position: relative;
 	font-size: 14px;
 }
 
@@ -1326,6 +1316,7 @@ ul.children {
 
 .comment-form-comment > textarea {
 	width: 100%;
+	border: 3px solid #1590B2;
 }
 
 #cancel-comment-reply-link {
