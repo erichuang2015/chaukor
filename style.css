@@ -725,9 +725,6 @@ ul.pings.commentlist {
 	ARTICLE: AUTHOR look-n-feel
 
 *****************************************/
-.author-profile {
-
-}
 
 .author-bio {
 	display: flex;
@@ -1214,6 +1211,10 @@ EXTERNAL libraries look-n-feel
 	margin-left: 3px;
 }
 
+.tagslist .fa-tags {
+	margin-left: 0;
+}
+
 .fa-user {
 	margin-right: 15px;
 }
@@ -1223,10 +1224,6 @@ EXTERNAL libraries look-n-feel
 	WORDPRESS COMMENTS
 
 *****************************************/
-.comments-wrapper {
-	
-}
-
 ul.commentlist {
     padding-left: 0;
 }
