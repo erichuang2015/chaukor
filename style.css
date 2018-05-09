@@ -461,8 +461,8 @@ a {
 .postmeta::before {
 	content: ' ';
 	display: block;
-	position: absolute;
-	left: 28px;
+	position: relative;
+	left: -32px;
 	width: 14px;
 	height: 14px;
 	transform: rotate(45deg);
@@ -1201,6 +1201,10 @@ EXTERNAL libraries look-n-feel
 .fa-clock,
 .fa-list {
 	margin-top: 3px;
+}
+
+.fa-list {
+	margin-left: 3px;
 }
 
 .fa-user {
