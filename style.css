@@ -394,6 +394,10 @@ h1 a {
 	color: #b23615 !important;
 }
 
+h1 a:hover {
+	color: #474747 !important;
+}
+
 a {
 	text-decoration: none;
 }
@@ -713,7 +717,7 @@ ul.pings.commentlist {
 
 .tagslist a:hover, 
 .postmeta p a:hover {
-	color: black;
+	color: #474747;
 	text-decoration: none;
 }
 
