@@ -56,7 +56,7 @@
                 <?php }
                         ?>
             </div>            
-            <div class="image-side image-side-single d-none d-sm-none col-md-6 col-lg-6">
+            <div class="image-side image-side-single d-none d-sm-6 col-md-6 col-lg-6">
               <?php
                           if ( has_post_thumbnail() ) {
                               the_post_thumbnail('full', ['class' => 'img-fluid', 'title' => 'Feature image']);
