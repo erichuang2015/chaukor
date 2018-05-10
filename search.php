@@ -14,9 +14,8 @@ Template Name: Search Page
   <?php endif; ?>
 
 <div class="main-content <?php if ( is_active_sidebar('primary')) { echo 'col-md-8 col-lg-8'; } else { echo 'col-md-12 col-lg-12';};?>">
- 
-    <h1 class="text-left-title-featured-sidebar truncate"><?php _e('Results for ', 'chaukor'); echo '<strong class="strong-search">' . get_query_var("s") . '</strong>'; ?> </h1>
-    <div class="collection">
+
+    <div class="blocktainer col-md-12 col-lg-12" id="blocktainer">
 
     <?php
     $s=get_search_query();
@@ -29,22 +28,29 @@ Template Name: Search Page
             while ( $the_query->have_posts() ) {
             $the_query->the_post();
                     ?>
-                <div class="collection-item">
-                    <a href="<?php the_permalink(); ?>">
-                    <p title="<?php the_title_attribute(); ?>" class="truncate"><?php if ( is_sticky() ) {?><i class="fa fa-star <?php echo 'sticky';?>" aria-hidden="true"></i><?php } else {?><i class="fa fa-circle" aria-hidden="true"></i><?php }; the_title(); ?>
-                        <span class="badge">
-                            <time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'chaukor'); ?></time>
-                        </span> 
-                    </p>
-                    </a>
-                </div>
+          <div class="block-item">
+          <div class="text-side col-md-6 col-lg-6">
+                <h1 title="<?php the_title_attribute(); ?>" class="main-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+                <p><?php the_excerpt(); ?></p>
+            </div>            
+            <div class="image-side col-md-6 col-lg-6 d-none d-sm-none d-md-block">
+                     <div class="postmeta"><p class="postdate">
+                        <i class="far fa-clock"></i><time datetime="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp')); echo '&nbsp;'; _e('ago', 'chaukor'); ?></time>
+                        <br />
+                        <i class="far fa-user"></i><?php the_author_meta('user_nicename');?>
+                        <?php if ( get_theme_mod( 'show_tags' ) == 'showtags' ) : ?>
+                        <p class="tagslist">
+                            <?php the_tags( '<i class="fas fa-tags" aria-hidden="true"></i>', ' ', ' ' ); ?> 
+                            <?php endif; ?>
+                        </p>
+                      </div>
+            </div>
+          </div>
 
    <?php    }
     } else {?>
 
-        <div class="collection-item">
-            <p><i class="fa fa-circle" aria-hidden="true"></i><?php _e('Sorry, it seems this search query has no posts.', 'chaukor'); ?></p>
-        </div>
+        <p><?php _e('Sorry, it seems this search query has no posts.', 'chaukor'); ?></p>
 
 
         <?php get_search_form(); ?>
