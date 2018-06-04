@@ -1,8 +1,4 @@
-<?php 
-  get_header(); 
-?>
-<div class="blocktainer col-md-12 col-lg-12" id="blocktainer">
- 
+
 <?php
       if ( have_posts() ) : 
         while ( have_posts() ) : the_post(); ?>
@@ -28,18 +24,6 @@
             </div>
           </div>
         <?php endwhile;
-        
-        else: ?>
-          <div class="post-content">
-              <p><?php _e('Sorry, it seems there are no posts available.', 'chaukor'); ?></p>
-              <?php get_search_form(); ?>
-          </div><!-- post-content END! -->
-                
-      <?php endif; ?>
-  <!-- navigation?-->
-  <?php chaukor_pagination_numeric_posts_nav(); ?>
-</div> <!-- close content main -->
+               
+ endif; ?>
 
-</div> <!-- row main -->
-<!-- start of footer -->
-<?php get_footer(); ?>
