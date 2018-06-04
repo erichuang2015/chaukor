@@ -14,7 +14,7 @@ Chaukor is a Wordpress theme based on your timeline. It shows your post history 
 # Chaukor Settings - theme specific custom options
 - Show author section (show/hide)
 
-![Chaukor](https://gitlab.com/canitia/chaukor/blob/master/screenshot.png)
+![Chaukor](https://gitlab.com/canitia/chaukor/raw/master/screenshot.png)
 
 ## Libraries used
 - Font Awesome 5.0.12
