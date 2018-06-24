@@ -1,6 +1,6 @@
 Chaukor
 ==================
-Chaukor is a Wordpress theme based on your timeline. It shows your post history in a timeline like manner.
+Chaukor is a WordPress theme based on your timeline. It shows your post history in a timeline like manner.
 
 # Theme features
 - Set a custom site icon (favicon) and navbar logo
@@ -19,7 +19,7 @@ Chaukor is a Wordpress theme based on your timeline. It shows your post history 
 ## Libraries used
 - Font Awesome 5.0.12
 - Bootstrap v4.1.1
-- JQuery (the Wordpress included version)
+- JQuery
 - [Bootstrap Navwalker](https://github.com/wp-bootstrap/wp-bootstrap-navwalker)
 
 ## Currently tested on:
