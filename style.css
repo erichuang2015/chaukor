@@ -4,7 +4,7 @@ Theme URI: https://chaukor.canitia.nl
 Author: Michael Boumann
 Author URI: https://me.canitia.nl
 Description: Chaukor brings your timeline to you!
-Version: 1.0.1r
+Version: 1.0.2r
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, custom-menu, custom-logo, featured-images, sticky-post, theme-options, threaded-comments, translation-ready
@@ -13,19 +13,6 @@ Text Domain: chaukor
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-
-.infinite-scroll .pagination {
-	display: none;
-}
-
-.sticky.is-sticky {
-	position: fixed;
-	left: 0;
-	right: 0;
-	top: 0;
-	z-index: 1000;
-	width: 100%;
-  }
 
 /* **************************************
 
@@ -1547,6 +1534,19 @@ div.aligncenter {
 	CUSTOM WORDPRESS WIDGET CSS
 
 *****************************************/
+.infinite-scroll .pagination {
+	display: none;
+}
+
+.sticky.is-sticky {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 1000;
+	width: 100%;
+  }
+
 .search-box {
 	margin-bottom: 32px;
 }
