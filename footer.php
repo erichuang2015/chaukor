@@ -9,5 +9,13 @@
           <!-- close with Wordpress footer aka adminbar etc. -->
        <?php wp_footer();?>
 </footer>
+<script>
+  WebFont.load({
+    google: {
+      families: ['Dancing Script', 'Merriweather', 'Prompt']
+    }
+  });
+</script>
+
   </body>
 </html>

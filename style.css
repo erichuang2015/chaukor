@@ -1,10 +1,10 @@
 /*
 Theme Name: Chaukor
-Theme URI: https://chaukor.canitia.nl
+Theme URI: https://canitia.nl
 Author: Michael Boumann
 Author URI: https://me.canitia.nl
 Description: Chaukor brings your timeline to you!
-Version: 1.0.2r
+Version: 1.0.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, custom-menu, custom-logo, featured-images, sticky-post, theme-options, threaded-comments, translation-ready
@@ -24,7 +24,7 @@ html body {
 }
 
 body {
-  font-family: 'Karla', sans-serif !important;
+	font-family: 'Prompt', sans-serif !important;
 }
 
 .container-fluid {
@@ -34,6 +34,10 @@ body {
 
 .container-fluid a {
 	color: black;
+}
+
+p {
+	margin-bottom: 0;
 }
 
 p > a {
@@ -81,7 +85,9 @@ q {
 	padding-top:10px;
 	padding-bottom:10px;
 	background-color: whitesmoke;
-	border: 1px solid #fc4a1a !important;
+	border: 3px dotted #1590B2 !important;
+	color: #474747;
+	text-align: center;
 }
 
 pre {
@@ -172,18 +178,19 @@ strong {
   HEADER / NAVBAR / NAVIGATION
 
 *****************************************/
-header {
-	background: #BD0D25 !important;
-}
-
 .admin-nav {
 	margin-top: 30px;
+}
+
+header {
+	background: #BD0D25 !important;
 }
 
 .navbar {
 	background-color: #BD0D25 !important;
 	padding:0;
-	max-width: 1470px;
+    max-width: 1170px;
+    border-radius: .25rem;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -265,7 +272,8 @@ header {
 *****************************************/
 
 .blocktainer {
-	max-width: 1500px;
+	margin-top: 55px;
+	max-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -288,8 +296,10 @@ header {
 	justify-content: right; /* align horizontal */
 	text-align: right;
 	flex-direction: column;
-	padding: 15px;
-	padding-right: 35px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
 	background: white;
 	margin-left: auto;
 	border-left: 1px solid #ebebeb;
@@ -319,11 +329,12 @@ header {
 }
 
 .postdate {
-	font-size: 1.15em;
-    text-transform: uppercase;
+    text-transform: capitalize;
 	font-weight: 600;
 	color: #1590B2;
+	margin-top: -15px;
 	margin-bottom: 0;
+	font-family: 'Merriweather', serif;
 }
 
 .text-side-single {
@@ -365,6 +376,7 @@ header {
 .main-title {
 	font-size: 2em;
 	font-weight: 700;
+	font-family: 'Dancing Script', cursive;
 	text-overflow: ellipsis;
 	overflow: hidden;
 	white-space: nowrap;
@@ -374,10 +386,17 @@ header {
 .main-title-post {
 	border-bottom: 3px solid #1590B2;
 	margin-top: 35px;
+	font-family: 'Dancing Script', cursive;
+	color: #b23615;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
 	color: #b23615;
+	font-family: 'Merriweather', serif;
+}
+
+h1 {
+	font-family: 'Dancing Script', cursive;
 }
 
 h1 a {
@@ -386,6 +405,7 @@ h1 a {
 
 h1 a:hover {
 	color: #474747 !important;
+	text-decoration: none;
 }
 
 a {
@@ -533,6 +553,7 @@ POST/ARTICLE HEADERS
 *****************************************/
 .wp-post-image {
 	object-fit: cover;
+	height: 100vh !important;
 }
 
 .badge-date {
@@ -721,6 +742,11 @@ ul.pings.commentlist {
     margin-top: 15px;
 }
 
+.author-profile {
+	border-top: 2px solid #f8f8f8;
+    margin-top: 15px;
+}
+
 .author-profile > .avatar {
 	float:left;
 }
@@ -752,7 +778,7 @@ img.avatar {
 }
 
 .author-name a:hover {
-	color: #b23615;
+	color: #474747;
 	text-decoration: none;
 }
 
@@ -1193,9 +1219,12 @@ EXTERNAL libraries look-n-feel
 	margin-top: 3px;
 }
 
-.fa-list, 
 .fa-tags {
 	margin-left: 3px;
+}
+
+.fa-list {
+	margin-left: 0;
 }
 
 .tagslist .fa-tags {
@@ -1279,6 +1308,11 @@ ul.children {
 	display:none;
 }
 
+.comments-wrapper {
+    background: #f8f8f8;
+    border-radius: 15px;
+}
+
 .comment-author > cite {
     font-size: 1.3em;
     font-weight: 300;
@@ -1286,24 +1320,17 @@ ul.children {
 }
 
 .comment-meta {
-	float: right;
-	top: -45px;
-	position: relative;
-	font-size: 14px;
+
 }
 
 .comment-reply-link, .form-submit > input#submit, input.search-submit{
     cursor: pointer;
-    background-color:#b23615;
+	background-color:#b23615;
+	color: white;
     border: none;
     border-radius: 3px;
-	padding-left: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 15px;
+	padding: 5px;
     text-transform: uppercase;
-    width: auto;
-	color:white;
 	font-weight: 600;
 }
 
@@ -1311,6 +1338,7 @@ ul.children {
 	 text-decoration: none;
 	 color: white;
 	 background: #1590B2;
+	 border: 0 !important;
 }
 
 .form-submit > input#submit {
