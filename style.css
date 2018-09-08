@@ -36,6 +36,10 @@ body {
 	color: black;
 }
 
+p {
+	margin-bottom: 0;
+}
+
 p > a {
 	text-decoration: underline;
 }
