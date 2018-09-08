@@ -85,7 +85,9 @@ q {
 	padding-top:10px;
 	padding-bottom:10px;
 	background-color: whitesmoke;
-	border: 1px solid #fc4a1a !important;
+	border: 3px dotted #1590B2 !important;
+	color: #474747;
+	text-align: center;
 }
 
 pre {
@@ -1204,9 +1206,12 @@ EXTERNAL libraries look-n-feel
 	margin-top: 3px;
 }
 
-.fa-list, 
 .fa-tags {
 	margin-left: 3px;
+}
+
+.fa-list {
+	margin-left: 0;
 }
 
 .tagslist .fa-tags {
@@ -1290,6 +1295,11 @@ ul.children {
 	display:none;
 }
 
+.comments-wrapper {
+    background: #f8f8f8;
+    border-radius: 15px;
+}
+
 .comment-author > cite {
     font-size: 1.3em;
     font-weight: 300;
@@ -1297,24 +1307,17 @@ ul.children {
 }
 
 .comment-meta {
-	float: right;
-	top: -45px;
-	position: relative;
-	font-size: 14px;
+
 }
 
 .comment-reply-link, .form-submit > input#submit, input.search-submit{
     cursor: pointer;
-    background-color:#b23615;
+	background-color:#b23615;
+	color: white;
     border: none;
     border-radius: 3px;
-	padding-left: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 15px;
+	padding: 5px;
     text-transform: uppercase;
-    width: auto;
-	color:white;
 	font-weight: 600;
 }
 
@@ -1322,6 +1325,7 @@ ul.children {
 	 text-decoration: none;
 	 color: white;
 	 background: #1590B2;
+	 border: 0 !important;
 }
 
 .form-submit > input#submit {
