@@ -187,7 +187,7 @@ header {
 .navbar {
 	background-color: #BD0D25 !important;
 	padding:0;
-	max-width: 1470px;
+	max-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -269,7 +269,8 @@ header {
 *****************************************/
 
 .blocktainer {
-	max-width: 1500px;
+	margin-top: 55px;
+	max-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
 }
