@@ -27,38 +27,12 @@
                      <?php if ( get_theme_mod( 'show_author_section' ) == 'hideauthor' ) :?>
                     <p class="postdate"><i class="fa fa-user" aria-hidden="true"></i><?php the_author_posts_link();?></p>
                     <?php endif; ?>
-                        <?php if ( get_theme_mod( 'show_tags' ) == 'showtags' ) : ?>
-                        <p class="tagslist">
-                            <?php the_tags( '<i class="fas fa-tags" aria-hidden="true"></i>', ' ', ' ' ); ?> 
-                            <?php endif; ?>
-                        </p>
-                    <?php if(has_category()) { ?>
-                    <p>
-                            <i class="fas fa-list" aria-hidden="true"></i></span>
-                            <?php $categories = get_the_category();
-                                $separator = ', ';
-                                $output = '';
-                                if ( ! empty( $categories ) ) {
-                                    foreach( $categories as $category ) {
-                                        $output .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '">' 
-                                        . esc_html( $category->name ) . '</a>' . $separator;
-                                    }
-                                    echo trim( $output, $separator );
-                            } ?>
-                     </p>
-                            <?php  }  ?>
                  </div><!-- close post-info -->            
             </span>
             <h1 title="<?php the_title_attribute(); ?>" class="main-title main-title-post"><?php the_title(); ?></h1>
             <p><?php the_content(); ?></p>
                  <?php wp_link_pages('before=<ul class="pagination pagination-within center-align" role="navigation">&link_before=<li>&link_after=</li>&after=</ul>'); ?>
-                     <?php get_template_part( 'partials/authorsection' ); ?>
-
-                <?php if( comments_open() ) { ?>
-                <!-- let user enter a comment -->
-                <?php comments_template(); ?>
-                <?php }
-                        ?>
+                        <?php get_template_part( 'partials/authorsection' );  ?>
             </div>            
             <div class="image-side image-side-single d-none d-sm-flex d-md-flex d-lg-flex col-md-6 col-lg-6">
               <?php
