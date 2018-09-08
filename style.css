@@ -1,10 +1,10 @@
 /*
 Theme Name: Chaukor
-Theme URI: https://chaukor.canitia.nl
+Theme URI: https://canitia.nl
 Author: Michael Boumann
 Author URI: https://me.canitia.nl
 Description: Chaukor brings your timeline to you!
-Version: 1.0.2r
+Version: 1.0.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, custom-menu, custom-logo, featured-images, sticky-post, theme-options, threaded-comments, translation-ready
@@ -24,7 +24,7 @@ html body {
 }
 
 body {
-  font-family: 'Karla', sans-serif !important;
+	font-family: 'Prompt', sans-serif !important;
 }
 
 .container-fluid {
@@ -172,12 +172,12 @@ strong {
   HEADER / NAVBAR / NAVIGATION
 
 *****************************************/
-header {
-	background: #BD0D25 !important;
-}
-
 .admin-nav {
 	margin-top: 30px;
+}
+
+header {
+	background: #BD0D25 !important;
 }
 
 .navbar {
@@ -319,11 +319,11 @@ header {
 }
 
 .postdate {
-	font-size: 1.15em;
-    text-transform: uppercase;
+    text-transform: capitalize;
 	font-weight: 600;
 	color: #1590B2;
 	margin-bottom: 0;
+	font-family: 'Merriweather', serif;
 }
 
 .text-side-single {
@@ -365,6 +365,7 @@ header {
 .main-title {
 	font-size: 2em;
 	font-weight: 700;
+	font-family: 'Dancing Script', cursive;
 	text-overflow: ellipsis;
 	overflow: hidden;
 	white-space: nowrap;
@@ -386,6 +387,7 @@ h1 a {
 
 h1 a:hover {
 	color: #474747 !important;
+	text-decoration: none;
 }
 
 a {
@@ -533,6 +535,7 @@ POST/ARTICLE HEADERS
 *****************************************/
 .wp-post-image {
 	object-fit: cover;
+	height: 100vh !important;
 }
 
 .badge-date {
