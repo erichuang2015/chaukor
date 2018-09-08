@@ -332,6 +332,7 @@ header {
     text-transform: capitalize;
 	font-weight: 600;
 	color: #1590B2;
+	margin-top: -15px;
 	margin-bottom: 0;
 	font-family: 'Merriweather', serif;
 }
@@ -386,14 +387,13 @@ header {
 	border-bottom: 3px solid #1590B2;
 	margin-top: 35px;
 	font-family: 'Dancing Script', cursive;
+	color: #b23615;
 }
 
 h2, h3, h4, h5, h6 {
 	color: #b23615;
 	font-family: 'Merriweather', serif;
 }
-
-
 
 h1 {
 	font-family: 'Dancing Script', cursive;
