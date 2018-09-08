@@ -12,7 +12,7 @@ Chaukor is a WordPress theme based on your timeline. It shows your post history 
 - Jetpack's Infinite scroll support!
 
 # Chaukor Settings - theme specific custom options
-- Show author section (show/hide)
+- WIP
 
 ![Chaukor](https://gitlab.com/canitia/chaukor/raw/master/screenshot.png)
 
