@@ -11,9 +11,6 @@ Chaukor is a WordPress theme based on your timeline. It shows your post history 
 - **Translation support** - includes English and Dutch languages
 - Jetpack's Infinite scroll support!
 
-# Chaukor Settings - theme specific custom options
-- WIP
-
 ![Chaukor](https://gitlab.com/canitia/chaukor/raw/master/screenshot.png)
 
 ## Libraries used
